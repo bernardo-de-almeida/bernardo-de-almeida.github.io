@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>About me</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+	</head>
+	<body>
+        <div class="topnav">
+            <a>Bernardo P. de Almeida</a>
+            <div class="topnav-right">
+                <a href="/">Home</a>
+                <a href="/about/">About me</a>
+                <a href="/publications/">Publications</a>
+        		<a href="/BernardoAlmeida_curriculo_Aug2021.pdf">CV</a>
+            </div>
+        </div>
+
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="/assets/images/Cascais.jpeg">
+              <div class="text">Cascais, my village</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="/assets/images/Faro.jpeg">
+              <div class="text">Faro, in the south of Portugal, where I move to study at University</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="/assets/images/Sanger.jpeg">
+              <div class="text">Sanger Institute, learned a lot during the internship there</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="/assets/images/IMM.jpeg">
+              <div class="text">Instituto de Medicina Molecular (IMM), where I did my Master's thesis with Nuno Barbosa Morais</div>
+            </div>
+              
+            <div class="mySlides fade">
+              <img src="/assets/images/Vienna.jpeg">
+              <div class="text">Vienna, lovely city where I spent my PhD years</div>
+            </div>
+              
+            <div class="mySlides fade">
+              <img src="/assets/images/IMP.jpeg">
+              <div class="text">Research Institute of Molecular Pathology (IMP), where I did my PhD studies with Alex Stark</div>
+            </div>
+              
+              </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span> 
+              <span class="dot" onclick="currentSlide(6)"></span> 
+              
+            </div>
+            
+            <script>
+            var slideIndex = 0;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+
+            function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 8000); // Change image every 8 seconds
+            }
+
+            </script>
+
+
+        <br/>
+        
+        <div style="width:70%;margin-left:auto;margin-right:auto;">
+        <h1>About me</h1>
+        <p>I got my undergraduate degree in Biomedical Sciences, at the University of Algarve, where I had the chance to learn the concepts and techniques of medical science and molecular biology. There, I was exposed to diverse areas of research and interacted with several scientists. The most interesting part of that training was my final project, a scientific report in breast cancer genetic susceptibility with <a href="https://maialab.org" class="link">Ana Teresa Maia</a>. I continued onto the MSc in Oncobiology, at the same time that I was working at the <a href="https://maialab.org" class="link">Functional Genomics of Cancer Group</a> on the identification of new genetic risk markers for breast cancer and the cis-regulation of somatic mutations also in breast cancer.</p>
+        <p>I spent the summer of 2016 as a visiting worker in the group of <a href="https://www.sanger.ac.uk/group/gaffney-group/" class="link">Daniel Gaffney</a> at the Sanger Institute, working on a map of histone Quantitative Trait Loci (hQTL) in induced Pluripotent Stem Cells (iPSCs) from the <a href="https://www.hipsci.org/" class="link">HipSci</a> consortium.</p>
+        <p>I then joined <a href="https://imm.medicina.ulisboa.pt/group/distrans/" class="link">Nuno Barbosa Morais</a>'s computational biology group at Instituto de Medicina Molecular (IMM) to do my Master’s thesis, focusing on the molecular mechanisms underlying tumour development. In parallel, I was involved in multiple collaborations involving studying the role of lncRNAs in cancer, the impact of cancer-associated DNA variants on splicing deregulation, and using large-scale pharmacogenomics data to identifty natural compounds, and their respective targets, with novel therapeutic potential in cancer.</p>
+        <p>I am now a PhD student at <a href="https://starklab.org/" class="link">Alex Stark Lab</a>, Research Institute of Molecular Pathology (<a href="https://www.imp.ac.at/groups/alexander-stark/" class="link">IMP</a>), where I am using deep learning approaches and massively parallel reporter assays to understand the cis-regulatory information encoded in the sequence of transcriptional enhancers.</p>
+        <p>I love science and I do sports in my spare time!</p>
+        <p><i>“The people who are crazy enough to think they can change the world are the ones who do!”</i> Steve Jobs</p>
+        </div>
+
+        <br/>
+        <br/>
+
+        <footer>
+    		<ul>
+        		<li><a href="mailto:bernardo.almeida94@gmail.com">E-mail</a></li>
+                <li><a href="https://twitter.com/deAlmeida_BP">Twitter</a></li>
+                <li><a href="https://github.com/bernardo-de-almeida">GitHub</a></li>
+                <li><a href="https://www.researchgate.net/profile/Bernardo-De-Almeida-2">ResearchGate</a></li>
+                <li><a href="https://www.linkedin.com/in/bpalmeida/">LinkedIn</a></li>
+                <li><a href="https://orcid.org/0000-0002-6084-6775">ORCID</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

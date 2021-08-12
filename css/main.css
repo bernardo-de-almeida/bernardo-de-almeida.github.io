@@ -1,0 +1,273 @@
+body {
+    margin: 60px auto;
+    width: 100%;
+}
+.topnav, footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+
+/* Navigation bar */
+/* Add a grey background color to the top navigation */
+.topnav {
+    list-style: none;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-left: 8px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  margin-right: 5px;
+}
+
+/* Change the color of navigation bar left title */
+.topnav a {
+  color: #666;
+  font-weight: bold;
+}
+
+/* Change the color of navigation bar right headers */
+.topnav-right a {
+  font-weight: normal;
+}
+
+/* Change the color of links on hover */
+.topnav-right a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+  padding-right: 20px;
+}
+
+/* Text */
+h1 {
+    font-size: 1.5em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    color: #377eb8
+}
+h2 {
+    font-size: 1.3em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    color: #377eb8
+}
+p {
+    font-size: 1.1em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    line-height: 1.4em;
+    color: rgb(73, 73, 73);
+}
+p2 {
+    font-size: 0.9em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    line-height: 1.4em;
+    color: rgb(73, 73, 73);
+}
+
+/* Columns */
+.column {
+    float: left;
+    padding: 10px;
+  }
+    
+  /* Left column */
+  .column.left {
+    width: 30%;
+    position: fixed;
+    top: 100px;
+    left: 80px;
+  }
+  
+  /* Right column */
+  .column.right {
+    width: 45%;
+    margin-left: 650px;
+  }
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  /* IMAGES */
+  img.center {
+    border-radius: 50%;
+  }
+
+  img.zoom:hover {
+    -ms-transform: scale(2); /* IE 9 */
+    -webkit-transform: scale(2); /* Safari 3-8 */
+    transform: scale(2); 
+  }
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .column.left, .column.right {
+      width: 90%;
+      position: static;
+      margin-left:0;
+      left:0;
+    }
+    img.zoom:hover {
+        -ms-transform: scale(1); /* IE 9 */
+        -webkit-transform: scale(1); /* Safari 3-8 */
+        transform: scale(1);
+      }
+  }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* BASIC LINKS */
+
+  /* unvisited link */
+  /* visited link */
+a.link:link, a.link:visited {
+    color: rgb(73, 73, 73);
+  }
+  
+  /* mouse over link */
+  /* selected link */
+  a.link:hover, a.link:active {
+    color: #377eb8;
+  }
+
+
+  /* PAPER LINKS */
+  
+  /* unvisited link */
+a.paper:link, a.paper:visited{
+    color: rgb(73, 73, 73);
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  /* selected link */
+  a.paper:hover, a.paper:active {
+    color: #377eb8;
+  }
+
+
+
+/* Footer */
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .9em;
+    text-align: center;
+  }
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+footer ul li a {
+    text-decoration: none;
+    color: #377eb8;
+}
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Posts */
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    list-style: none;
+}
+
+
+/* IMAGES SLIDESHOW */
+/* Slideshow container */
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  /* Change image styles */
+  .fade img {
+    max-height:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
