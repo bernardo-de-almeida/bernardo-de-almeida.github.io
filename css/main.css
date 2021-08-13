@@ -74,7 +74,13 @@ p {
     font-size: 1.1em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     line-height: 1.4em;
+    margin-top: 1em ;
+    margin-bottom: 1em ;
     color: rgb(73, 73, 73);
+}
+p.pub {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 p2 {
     font-size: 0.9em;
