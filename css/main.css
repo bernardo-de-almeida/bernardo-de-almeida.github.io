@@ -97,7 +97,7 @@ p2 {
     
   /* Left column */
   .column.left {
-    width: 30%;
+    width: 350px;
     position: fixed;
     top: 100px;
     left: 80px;
@@ -106,7 +106,8 @@ p2 {
   /* Right column */
   .column.right {
     width: 45%;
-    margin-left: 650px;
+    margin-left: 540px;
+    margin-right: 150px;
   }
   
   /* Clear floats after the columns */
@@ -130,7 +131,7 @@ p2 {
 
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .column.left, .column.right {
       width: 90%;
       position: static;
@@ -233,7 +234,8 @@ ul.posts li {
   /* Caption text */
   .text {
     color: #f2f2f2;
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: bold;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
