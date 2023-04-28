@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tutorials</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+	</head>
+	<body>
+        <div class="topnav">
+            <a>Bernardo P. de Almeida</a>
+            <div class="topnav-right">
+                <a href="/">Home</a>
+                <a href="/about/">About me</a>
+                <a href="/publications/">Publications</a>
+        		    <a href="/code/">Code</a>
+        		    <a href="/tutorials/">Tutorials</a>
+        		    <a href="/BernardoAlmeida_CV.pdf">CV</a>
+            </div>
+        </div>
+
+
+        <br/>
+
+        <div style="width:70%;margin-left:auto;margin-right:auto;">
+        <h2>Tutorials of deep learning models</h2>
+				<p class="pub" style="margin:0"><a href="https://colab.research.google.com/drive/1Xgak40TuxWWLh5P5ARf0-4Xo0BcRn0Gd" class="paper">DeepSTARR</a>: a multi-task deep learning model (CNN) to predict enhancer activities genome-wide.</p>
+        <p class="pub" style="margin:0; padding-top:0; margin-bottom:0px;"><a href="https://www.nature.com/articles/s41588-022-01048-5" class="link">PAPER</a></p>
+        <p style="margin:0; padding-top:5px;padding-bottom:0px;">DeepSTARR is a multi-task CNN built to quantitatively predict the activities of developmental and housekeeping enhancers from DNA sequence in Drosophila melanogaster S2 cells. Enhancer activities were assessed genome-wide using the transcriptional reporter assay <a href="https://www.science.org/doi/10.1126/science.1232542" class="link">STARR-seq</a>.</p>
+        <p style="margin:0; padding-top:5px;padding-bottom:15px;">This tutorial will show you how to (1) train DeepSTARR, (2) compute nucleotide contribution scores, and (3) discover predictive motifs with TF-MoDISco.</p>
+        <br/>
+        <p class="pub" style="margin:0"><a href="https://colab.research.google.com/drive/1qknFWSiRdCHM_ghC4Lw6wxry-kNIZCic" class="paper">Enformer</a>: a transformer-based deep learning model (based on self-attention) with the ability to predict chromatin data and gene expression from DNA sequences.</p>
+        <p class="pub" style="margin:0; padding-top:0; margin-bottom:5px;"><a href="https://www.nature.com/articles/s41592-021-01252-x" class="link">PAPER</a></p>
+        <div class="images" style="margin-bottom:0;margin-top:0px;">
+          <img class="zoom" height="300" src="/tutorials/DeepLearning_genomics/Enformer_model.png">
+          <img class="zoom" height="300" src="/tutorials/DeepLearning_genomics/Enformer_architecture.png">
+        </div>
+        <p style="margin:0; padding-top:5px;padding-bottom:0px;">The model was trained to predict thousands of epigenetic and transcriptional dataset from both human and mouse in a multitask setting across long DNA sequences.</p>
+        <p style="margin:0; padding-top:5px;padding-bottom:0px;">This tutorial will show you how to (1) use the pre-trained Enformer model to make predictions of different chromatin states and gene expression for a given locus, (2) compute nucleotide contribution scores for those predictions, and (3) predict the effect of a genetic variant on those profiles.</p>
+        <p style="margin:0; padding-top:5px;padding-bottom:15px;">This tutorial is based on the <a href="https://github.com/deepmind/deepmind-research/tree/master/enformer#enformer-usageipynb-" class="link">enformer-usage colab</a>.</p>
+        <br/>
+        
+        <br/>
+        <h2>Other tutorials</h2>
+				<p class="pub" style="margin:0"><a href="https://colab.research.google.com/drive/1O7OspwUwewyOi8kVLaamMw5dgz2o8hoE" class="paper">Self-Attention</a>: this tutorial will show you how Self-Attention works and use it to solve a simple task: given an array of 10 integers (0-9), predict wether there are more 2s than 4s.</p>
+        <div class="images" style="margin-bottom:0;margin-top:0px;">
+          <img class="zoom" width="400" src="/tutorials/DeepLearning_genomics/Attention_numbers_task.png">
+        </div>
+        <p style="margin:0; padding-top:5px;padding-bottom:15px;">This tutorial will show you how to (1) code the different Self-Attention calculations, (2) implement a Self-Attention layer from scratch or using the built-in Keras Attention layer, and (3) train simple models and inspect the Attention weights and values learned during training.</p>
+        
+        
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <footer>
+    		<ul>
+        		<li><a href="mailto:bernardo.almeida94@gmail.com">E-mail</a></li>
+                <li><a href="https://twitter.com/deAlmeida_BP">Twitter</a></li>
+                <li><a href="https://github.com/bernardo-de-almeida">GitHub</a></li>
+                <li><a href="https://www.researchgate.net/profile/Bernardo-De-Almeida-2">ResearchGate</a></li>
+                <li><a href="https://www.linkedin.com/in/bpalmeida/">LinkedIn</a></li>
+                <li><a href="https://orcid.org/0000-0002-6084-6775">ORCID</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
