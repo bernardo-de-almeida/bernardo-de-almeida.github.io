@@ -1,0 +1,48 @@
+- date: "2024-09"
+  text: 'Our work on the "Nucleotide Transformer: building and evaluating robust foundation models for genomics" was presented at <a href="https://meetings.cshl.edu/meetings.aspx?meet=SYSTEMS&year=24" class="link">CSHL Systems Biology</a> (March 2024) and <a href="https://sites.google.com/cs.washington.edu/mlcb2024/schedule?authuser=0" class="link">MLCB</a> (September 2024) conferences'
+
+- date: "2024-05"
+  text: 'Very happy to receive <a href="https://www.imp.ac.at/news/article/life-science-research-award-for-bernardo-almeida/" class="link">2024 Denise P. Barlow Award</a> for best PhD thesis on biological mechanisms in Vienna, Austria (May 2024)'
+  additional_text: '. For more information see <a href="https://www.imp.ac.at/news/article/bernardo-de-almeida-wins-2024-denise-p-barlow-award" class="link">here</a>'
+  images:
+    - "/assets/images/DeniseBarlowAward2024.png"
+
+- date: "2023-12"
+  text: 'It was great to participate in the podcast <em><a href="https://expresso.pt/podcasts/o-futuro-do-futuro/2023-12-05-Bernardo-Almeida-Hoje-temos-o-chatGPT-e-modelos-de-linguagem-e-o-que-estou-a-tentar-e-aplica-los-a-linguagem-do-ADN-367f61a9" class="link">Futuro do Futuro</a></em> (in portuguese) and discuss my work and the future of AI in biology (December 2023)'
+  images:
+    - "/assets/images/podcast2023_2.png"
+    - "/assets/images/podcast2023.webp"
+
+- date: "2023-12"
+  text: 'My final PhD paper on designing synthetic enhancers for selected tissues in vivo using AI is out in <a href="https://www.nature.com/articles/s41586-023-06905-9" class="link">Nature</a> (December 2023)'
+
+- date: "2023-11"
+  text: 'I am very happy to have received one of the <a href="https://www.viennabiocenter.org/about/news/vienna-biocenter-phd-awards-2023/" class="link">2023 Vienna BioCenter PhD Awards</a>! Shared with great colleagues. It''s the best way to close the PhD at the <a href="https://www.imp.ac.at/groups/alexander-stark" class="link">IMP</a>, in Vienna (November 2023)'
+
+- date: "2023-04"
+  text: 'Very happy to give a OLISSIPO Workshop on <a href="https://olissipo.inesc-id.pt/2023/03/29/olissipo-workshop-decoding-the-genome-with-deep-learning/" class="link">Decoding the genome with deep learning</a>, including a <a href="/tutorials" class="link">hands-on session</a> (April 2023)'
+  images:
+    - "/tutorials/DeepLearning_genomics/OLISSIPO_workshop2023.jpeg"
+    - "/tutorials/DeepLearning_genomics/OLISSIPO_workshop2023_2.jpeg"
+
+- date: "2023-04"
+  text: 'Check the Kipoi Seminar where I presented my work on <a href="https://www.youtube.com/watch?v=09zZhhOUHTo&ab_channel=KipoiSeminar" class="link">Decoding the cis-regulatory information of enhancer sequences</a> (April 2023)'
+  video: "https://www.youtube.com/embed/09zZhhOUHTo"
+
+- date: "2022-09"
+  text: 'Very honoured to receive <a href="https://www.imp.ac.at/news/article/life-science-research-award-for-bernardo-almeida/" class="link">The Life Science Research Award Austria 2022</a> from the Austrian Society for Molecular Biosciences and Biotechnology (ÖGMBT) in the category "Basic Science" (September 2022)'
+  additional_text: '. For more information see the <a href="https://oegmbt.at/awards" class="link">official press release</a>'
+  images:
+    - "/assets/images/LifeSciencesAward2022.png"
+    - "/assets/images/LifeSciencesAward2022_group.jpg"
+
+- date: "2022-08"
+  text: 'Presented a poster at the <a href="https://www.embl.de/training/events/2022/TRM22-01/" class="link">15th EMBL Conference: Transcription and Chromatin</a> about our new <a href="https://www.biorxiv.org/content/10.1101/2022.08.31.506061v1" class="link">preprint</a> on the flexibility of enhancer sequences and motif syntax (August 2022)'
+  additional_text: '. Check out the poster <a href="/assets/others/deAlmeida_EMBL_TranscChromat2022.png" class="link">here</a>'
+
+- date: "2022-07"
+  text: 'Very happy to see our <a href="https://www.nature.com/articles/s41588-022-01048-5" class="link">DeepSTARR paper</a> highlighted in Nature Methods: "<a href="https://www.nature.com/articles/s41592-022-01557-5" class="link">Predicting and designing enhancers</a>" (July 2022)'
+
+- date: "2021-12"
+  text: 'Check the ISCBacademy Webinar where I presented my recent work <a href="https://www.youtube.com/watch?v=vg32mqptMdQ&ab_channel=ISCB" class="link">DeepSTARR predicts enhancer activity from DNA sequence and enables the de novo design of synthetic enhancers</a> (December 2021)'
+  video: "https://www.youtube.com/embed/vg32mqptMdQ"

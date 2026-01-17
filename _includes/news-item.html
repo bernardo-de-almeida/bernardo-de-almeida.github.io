@@ -1,0 +1,19 @@
+{% if include.news.images %}
+<div class="images" style="margin-bottom:0;margin-top:10px;">
+  {% for image in include.news.images %}
+    <img class="zoom" height="100" src="{{ image }}">
+  {% endfor %}
+</div>
+{% endif %}
+
+<p style="margin:0; padding-top:0;">{{ include.news.text }}</p>
+{% if include.news.additional_text %}
+<p2 style="margin:0; padding-top:0;">{{ include.news.additional_text }}</p2>
+{% endif %}
+
+{% if include.news.video %}
+<p style="margin:0; padding-top:0px;padding-bottom:10px;"></p>
+<iframe width="360" height="180" src="{{ include.news.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% endif %}
+
+<br/>

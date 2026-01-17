@@ -1,0 +1,252 @@
+selected:
+- authors: <strong>B.P. de Almeida</strong>, C. Schaub, M. Pagani, S. Secchia, E.E.M. Furlong, A. Stark
+  title: Targeted design of synthetic enhancers for selected tissues in the Drosophila embryo
+  journal: Nature
+  year: 2024
+  url: https://www.nature.com/articles/s41586-023-06905-9
+  image: /assets/images/nature2023.jpeg
+  featured_commentary:
+  - author: Alexandra Despang
+    text: Designer enhancers for cell-type-specific gene regulation
+    journal: Nature Biotechnology 2024
+    url: https://www.nature.com/articles/s41587-023-02112-z
+  press:
+  - text: Artificial Intelligence cracks code of gene regulation
+    url: https://www.imp.ac.at/news/article/artificial-intelligence-cracks-code-of-gene-regulation
+  - text: Twitter thread
+    url: https://twitter.com/stark_lab/status/1734606276188057994
+  video: https://www.youtube.com/embed/pKoEYeFvol4
+  links:
+  - text: CODE
+    url: https://github.com/bernardo-de-almeida/DeepSTARR_embryo
+- authors: F. Reiter*, <strong>B.P. de Almeida*</strong>, A. Stark
+  title: Enhancers display constrained sequence flexibility and context-specific modulation of motif function
+  journal: Genome Research
+  year: 2023
+  url: https://genome.cshlp.org/content/33/3/346
+  preprint: https://www.biorxiv.org/content/10.1101/2022.08.31.506061v1
+  image: /assets/images/Enhancer_variants_paper.png
+  press:
+  - text: Decoding the grammar of gene regulation
+    url: https://www.imp.ac.at/news/article/decoding-the-grammar-of-gene-regulation
+  - text: 'Poster at EMBL Conference: Transcription and Chromatin (August 2022)'
+    url: /assets/others/deAlmeida_EMBL_TranscChromat2022.png
+  links:
+  - text: CODE
+    url: https://github.com/bernardo-de-almeida/Variant_STARRseq
+- authors: <strong>B.P. de Almeida</strong>, F. Reiter, M. Pagani, A. Stark
+  title: DeepSTARR predicts enhancer activity from DNA sequence and enables the <em>de novo</em> design of synthetic enhancers
+  journal: Nature Genetics
+  year: 2022
+  url: https://www.nature.com/articles/s41588-022-01048-5
+  links:
+  - text: CODE
+    url: https://github.com/bernardo-de-almeida/DeepSTARR/
+  - text: MODEL
+    url: https://kipoi.org/models/DeepSTARR/
+  - text: DATA
+    url: https://zenodo.org/records/5502060
+  - text: GEO
+    url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE183939
+  preprint: https://www.biorxiv.org/content/10.1101/2021.10.05.463203v1
+  image: /assets/images/DeepSTARR.png
+  featured_commentary:
+  - author: Lin Tang
+    text: Predicting and designing enhancers
+    journal: Nature Methods 2022
+    url: https://www.nature.com/articles/s41592-022-01557-5
+  press:
+  - text: Awarded the Life Science Research Award Austria 2022, by ÖGMBT
+    url: https://oegmbt.at/awards
+  - text: Harnessing artificial intelligence to predict and control gene regulation
+    url: https://www.imp.ac.at/news/article/harnessing-artificial-intelligence-to-predict-and-control-gene-regulation/
+- authors: <strong>B.P. de Almeida</strong>, A.F. Vieira, J. Paredes, M. Bettencourt-Dias, N.L. Barbosa-Morais
+  title: Pan-cancer association of a centrosome amplification gene expression signature with genomic alterations and clinical outcome
+  journal: PLoS Computational Biology
+  year: 2019
+  url: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006832
+  image: /assets/images/CentrosomeAmplification_pressRelease.png
+  press:
+  - text: 'International media coverage: When a cell''s ''fingerprint'' can be a weapon against cancer (Science Daily)'
+    url: https://www.sciencedaily.com/releases/2019/03/190311141259.htm
+  links:
+  - text: CODE
+    url: https://github.com/bernardo-de-almeida/PanCancer_CentrosomeAmplification
+- authors: <strong>B.P. de Almeida*</strong>, J.D. Apolonio*, A. Binnie, P. Castelo-Branco
+  title: Roadmap of DNA methylation in breast cancer identifies novel prognostic biomarkers
+  journal: BMC Cancer
+  year: 2019
+  url: https://bmccancer.biomedcentral.com/articles/10.1186/s12885-019-5403-0
+preprints:
+- authors: G. Richard*, <strong>B.P. de Almeida*</strong>, H. Dalla-Torre, C. Blum, L. Hexemer, P. Pandey, S. Laurent, M. Lopez, A. Laterre, M. Lang, U. Şahin, K. Beguir, T. Pierrot
+  title: 'ChatNT: A Multimodal Conversational Agent for DNA, RNA and Protein Tasks'
+  journal: bioRxiv
+  year: 2024
+  url: https://www.biorxiv.org/content/10.1101/2024.04.30.591835v2
+- authors: <strong>B.P. de Almeida*</strong>, H. Dalla-Torre*, G. Richard, C. Blum, L. Hexemer, M. Gélard, P. Pandey, S. Laurent, A. Laterre, M. Lang, U. Şahin, K. Beguir, T. Pierrot
+  title: 'SegmentNT: annotating the genome at single-nucleotide resolution with DNA foundation models'
+  journal: bioRxiv
+  year: 2024
+  url: https://www.biorxiv.org/content/10.1101/2024.03.14.584712v2
+  additional_text: Example notebooks are available on <a href="https://colab.research.google.com/github/instadeepai/nucleotide-transformer/blob/main/examples/inference_segment_nt.ipynb" class="link">Google Colab</a>
+  image: /assets/images/segmentNT.png
+  press:
+  - text: Twitter thread
+    url: https://twitter.com/instadeepai/status/1768313528052482316
+  links:
+  - text: CODE
+    url: https://github.com/instadeepai/nucleotide-transformer
+  - text: MODEL
+    url: https://huggingface.co/InstaDeepAI/segment_nt
+- authors: E. Trop*, C.-H. Kao*, M. Polen*, Y. Schiff*, <strong>B.P. de Almeida</strong>, A. Gokaslan, T. Pierrot, V. Kuleshov
+  title: 'Advancing DNA Language Models: The Genomics Long-Range Benchmark'
+  journal: MLGenX ICLR Workshop
+  year: 2024
+  url: https://openreview.net/pdf?id=M3VlreGcC1
+  links:
+  - text: DATA
+    url: https://huggingface.co/datasets/InstaDeepAI/genomics-long-range-benchmark
+- authors: J. J. Garau-Luis*, P. Bordes*, L. Gonzalez*, M. Roller, <strong>B.P. de Almeida</strong>, L. Hexemer, C. Blum, S. Laurent, J. Grzegorzewski, M. Lang, T. Pierrot§, G. Richard§
+  title: Multi-modal Transfer Learning between Biological Foundation Models
+  journal: arXiv
+  year: 2024
+  url: https://arxiv.org/abs/2406.14150
+  links:
+  - text: MODEL
+    url: https://huggingface.co/isoformer-anonymous/Isoformer
+- authors: V. Loubiere, <strong>B.P. de Almeida</strong>, M. Pagani, A. Stark
+  title: Developmental and housekeeping transcriptional programs display distinct modes of enhancer-enhancer cooperativity in <em>Drosophila</em>
+  journal: bioRxiv
+  year: 2023
+  url: https://www.biorxiv.org/content/10.1101/2023.10.10.561770v1
+  links:
+  - text: CODE
+    url: https://github.com/vloubiere/git_peSTARRSeq
+- authors: N. Moreno-Marin, G. Marteil, N.C. Fresmann, <strong>B.P. de Almeida</strong>, K. Dores, R. Fragoso, J. Cardoso, J.B. Pereira-Leal, J.T. Barata, S. Godinho, N.L. Barbosa-Morais, M. Bettencourt-Dias
+  title: High prevalence and dependence of centrosome clustering in mesenchymal tumors and leukemia
+  journal: bioRxiv
+  year: 2023
+  url: https://www.biorxiv.org/content/10.1101/2023.03.13.532472v1
+- authors: J.M. Xavier, R. Magno, R. Russell, <strong>B.P. de Almeida</strong>, A. Jacinta-Fernandes, A. Duarte, M. Dunning, S. Samarajiwa, M. O'Reilly, C.L. Rocha, N. Rosli, B.A.J. Ponder, A.T. Maia
+  title: Mapping of cis-regulatory variants by differential allelic expression analysis identifies candidate risk variants and target genes of 27 breast cancer risk loci
+  journal: medRxiv
+  year: 2022
+  url: https://www.medrxiv.org/content/10.1101/2022.03.08.22271889v1
+  links:
+  - text: CODE
+    url: https://github.com/maialab/DaeBreastMicroarrays
+others:
+- authors: S. Boshar, E. Trop, <strong>B.P. de Almeida</strong>, L. Copoiu, T. Pierrot
+  title: Are genomic language models all you need? Exploring genomic language models on protein downstream tasks
+  journal: Bioinformatics
+  year: 2024
+  url: https://academic.oup.com/bioinformatics/article/40/9/btae529/7745814
+  preprint: https://www.biorxiv.org/content/10.1101/2024.05.20.594989v1
+  links:
+  - text: CODE
+    url: https://github.com/instadeepai/nucleotide-transformer
+  - text: MODEL
+    url: https://huggingface.co/InstaDeepAI/nucleotide-transformer-v2-50m-3mer-multi-species
+  - text: BENCHMARK
+    url: https://huggingface.co/datasets/InstaDeepAI/true-cds-protein-tasks
+- authors: H. Dalla-Torre, L. Gonzalez, J. Mendoza-Revilla, N.L. Carranza, A.H. Grzywaczewski, F. Oteri, C. Dallago, E. Trop, <strong>B.P. de Almeida</strong>, H. Sirelkhatim, G. Richard, M. Skwark, K. Beguir, M. Lopez, T. Pierrot
+  title: 'The Nucleotide Transformer: Building and Evaluating Robust Foundation Models for Human Genomics'
+  journal: Nat Methods
+  year: 2024
+  url: https://www.biorxiv.org/content/10.1101/2023.01.11.523679v3
+  additional_text: Two example notebooks showing how to finetune any of the models <a href="https://github.com/huggingface/notebooks/blob/main/examples/nucleotide_transformer_dna_sequence_modelling.ipynb" class="link">with regular finetuning</a> and <a href="https://github.com/huggingface/notebooks/blob/main/examples/nucleotide_transformer_dna_sequence_modelling_with_peft.ipynb" class="link">with LoRA</a> on any of the Nucleotide Transformer tasks are also available in HuggingFace example notebooks.
+  preprint: https://www.biorxiv.org/content/10.1101/2023.01.11.523679v3
+  links:
+  - text: CODE
+    url: https://github.com/instadeepai/nucleotide-transformer
+  - text: MODELS
+    url: https://huggingface.co/collections/InstaDeepAI/nucleotide-transformer-65099cdde13ff96230f2e592
+  - text: DATA
+    url: https://huggingface.co/collections/InstaDeepAI/nucleotide-transformer-65099cdde13ff96230f2e592
+  - text: BENCHMARK
+    url: https://huggingface.co/datasets/InstaDeepAI/nucleotide_transformer_downstream_tasks_revised
+- authors: J. Mendoza-Revilla, E. Trop, L. Gonzalez, M. Roller, H. Dalla-Torre, <strong>B.P. de Almeida</strong>, G. Richard, J. Caton, N.L. Carranza, M. Skwark, A. Laterre, K. Beguir, T. Pierrot, M. Lopez
+  title: A Foundational Large Language Model for Edible Plant Genomes
+  journal: Commun Biol
+  year: 2024
+  url: https://www.nature.com/articles/s42003-024-06465-2
+  preprint: https://www.biorxiv.org/content/10.1101/2023.10.24.563624v1
+  links:
+  - text: CODE
+    url: https://github.com/instadeepai/nucleotide-transformer
+  - text: MODEL
+    url: https://huggingface.co/InstaDeepAI/agro-nucleotide-transformer-1b
+  - text: DATA
+    url: https://huggingface.co/datasets/InstaDeepAI/plant-multi-species-genomes
+  - text: BENCHMARK
+    url: https://huggingface.co/datasets/InstaDeepAI/plant-genomic-benchmark
+- authors: L. Klaus, <strong>B.P. de Almeida</strong>, A. Vlasova, F. Nemčko, A. Schleiffer, K. Bergauer, L. Hofbauer, M. Rath, A. Stark
+  title: Identification and characterization of repressive domains in <em>Drosophila</em> transcription factors
+  journal: The EMBO Journal
+  year: 2022
+  url: https://www.embopress.org/doi/full/10.15252/embj.2022112100
+  preprint: https://www.biorxiv.org/content/10.1101/2022.08.26.505062v1
+- authors: L. Correia, J.M. Xavier, R. Magno, <strong>B.P. de Almeida</strong>, F. Esteves, I. Duarte, M. Eldridge, C. Sun, A. Bosma, L. Mittempergher, A. Marreiros, R. Bernards, C. Caldas, S.-F. Chin§ and A.-T. Maia§
+  title: Allelic expression imbalance of PIK3CA mutations is frequent in breast cancer and prognostically significant
+  journal: npj Breast Cancer
+  year: 2022
+  url: https://www.nature.com/articles/s41523-022-00435-9
+  preprint: https://www.biorxiv.org/content/10.1101/2021.03.05.434137v2
+- authors: J. Conde*, R.A. Pumroy*, C. Baker*, T. Rodrigues*, A. Guerreiro, B.B. Sousa, M.C. Marques, <strong>B.P. de Almeida</strong>, S. Lee, E.P. Leites, D. Picard, A. Samanta, S.H. Vaz, F. Sieglitz, M. Langini, M. Remke, R. Roque, T. Weiss, M. Weller, Y. Liu, S. Han, F. Corzana, V.A. Morais, C.C. Faria, T. Carvalho, P. Filippakopoulos, B. Snijder, N.L. Barbosa-Morais, V.Y. Moiseenkova-Bell§, and G.J.L. Bernardes§
+  title: Allosteric Antagonist Modulation of TRPV2 by Piperlongumine Impairs Glioblastoma Progression
+  journal: ACS Cent. Sci.
+  year: 2021
+  url: https://pubs.acs.org/doi/10.1021/acscentsci.1c00070
+  images:
+  - /assets/images/Piperlongumine_cover.jpeg
+  - /assets/images/Piperlongumine.jpeg
+- authors: I. Gomes, <strong>B.P. de Almeida</strong>, S. Dâmaso, A. Mansinho, I. Correia, S. Henriques, R. Cruz-Duarte, G. Vilhais, P. Félix, P. Alves, P. Corredeira, N.L. Barbosa-Morais, L. Costa, S. Casimiro
+  title: Expression of receptor activator of NFkB (RANK) drives stemness and resistance to therapy in ER+HER2- breast cancer
+  journal: Oncotarget
+  year: 2020
+  url: https://www.oncotarget.com/article/27576/text/
+- authors: T. Rodrigues, <strong>B.P. de Almeida</strong>, N.L. Barbosa-Morais, G.J.L. Bernardes
+  title: Dissecting celastrol with machine learning to unveil dark pharmacology
+  journal: Chemical Communications
+  year: 2019
+  url: https://pubs.rsc.org/en/content/articlelanding/2019/cc/c9cc03116b
+  image: /assets/images/Celastrol.jpeg
+- authors: C. Baker, T. Rodrigues, <strong>B.P. de Almeida</strong>, N.L. Barbosa-Morais, G.J.L. Bernardes
+  title: Natural product– drug conjugates for modulation of TRPV1-expressing tumors
+  journal: Bioorganic & Medicinal Chemistry
+  year: 2019
+  url: https://www.sciencedirect.com/science/article/abs/pii/S0968089619302512
+- authors: S. Braun*, M. Enculescu*, S.T. Setty*, M. Cortés-López, <strong>B.P. de Almeida</strong>, F.X.R. Sutandy, L. Schulz, A. Busch, M. Seiler, S. Ebersberger, N.L. Barbosa-Morais, S. Legewie, J. König, K. Zarnack
+  title: Decoding a cancer-relevant splicing decision in the RON proto-oncogene using high-throughput mutagenesis
+  journal: Nature Communications
+  year: 2018
+  url: https://www.nature.com/articles/s41467-018-05748-7
+- authors: G. Marteil, A. Guerrero, A.F. Vieira, <strong>B.P. de Almeida</strong>, P. Machado, S. Mendonça, M. Mesquita, B. Villarreal, I. Fonseca, M.E. Francia, K. Dores, N.P. Martins, S.S. Jana, E. Tranfield, N.L. Barbosa- Morais, J. Paredes, D. Pellman, S.A. Godinho, M. Bettencourt-Dias
+  title: Over-elongation of centrioles in cancer promotes centriole amplification and chromosome missegregation
+  journal: Nature Communications
+  year: 2018
+  url: https://www.nature.com/articles/s41467-018-03641-x
+workshop_papers:
+- authors: E. Trop, C.-H. Kao, M. Polen, Y. Schiff, <strong>B.P. de Almeida</strong>, A. Gokaslan, T. Pierrot, V. Kuleshov
+  title: 'Advancing DNA language models: The genomics long-range benchmark'
+  journal: AAAI, LLMs4Bio Workshop
+  year: 2024
+  url: https://github.com/LLMs4Science-Community/LLMs4Science-Community.github.io/blob/main/papers/LLMs4Bio24_paper_12.pdf
+- authors: S. Boshar, E. Trop, <strong>B.P. de Almeida</strong>, T. Pierrot
+  title: Exploring Genomic Language Models on Protein Downstream Tasks
+  journal: AAAI, LLMs4Bio Workshop
+  year: 2024
+  url: https://github.com/LLMs4Science-Community/LLMs4Science-Community.github.io/blob/main/papers/LLMs4Bio24_paper_14.pdf
+phd_thesis:
+- authors: <strong>B.P. de Almeida</strong>
+  title: Decoding the cis-regulatory information of enhancer sequences
+  year: 2023
+  url: /assets/others/Bernardo_Almeida_PhDthesis.pdf
+softwares:
+- authors: <strong>B.P. de Almeida</strong>*, N. Saraiva-Agostinho*, N.L. Barbosa-Morais
+  title: 'cTRAP: Identification of candidate causal perturbations from differential gene expression data'
+  journal: R package
+  url: https://bioconductor.org/packages/release/bioc/html/cTRAP.html
+  links:
+  - text: CODE
+    url: https://github.com/nuno-agostinho/cTRAP

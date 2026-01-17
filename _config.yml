@@ -1,0 +1,25 @@
+# Site settings
+title: Bernardo P. de Almeida
+description: Personal website and research portfolio
+url: "https://bernardo-de-almeida.github.io"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+theme: null
+
+# Exclude from processing
+exclude:
+  - README.md
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"

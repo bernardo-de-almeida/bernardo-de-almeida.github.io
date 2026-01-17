@@ -1,0 +1,45 @@
+<p class="pub" style="margin:0;">{% if include.number %}{{ include.number }}. {% endif %}{{ include.pub.authors }}. <a href="{{ include.pub.url }}" class="paper">{{ include.pub.title }}</a>. <em>{{ include.pub.journal }}</em> {{ include.pub.year }}</p>
+
+{% if include.pub.links or include.pub.preprint %}
+<p class="pub" style="margin:0; padding-top:0;">
+  {% if include.pub.links %}
+    {% for link in include.pub.links %}
+      {% unless forloop.first %} {% endunless %}<u><a href="{{ link.url }}" class="link">{{ link.text }}</a></u>
+    {% endfor %}
+  {% endif %}
+  {% if include.pub.preprint %}{% if include.pub.links %} {% endif %}<u><a href="{{ include.pub.preprint }}" class="link">Preprint</a></u>{% endif %}
+</p>
+{% endif %}
+
+{% if include.pub.featured_commentary %}
+  {% for commentary in include.pub.featured_commentary %}
+  <p2 style="margin:0; padding-top:0;; margin-bottom:05px">. Featured commentary: {{ commentary.author }}. "<a href="{{ commentary.url }}" class="link">{{ commentary.text }}</a>". {{ commentary.journal }}</p2>
+  <br/>
+  {% endfor %}
+{% endif %}
+
+{% if include.pub.press %}
+  {% for press in include.pub.press %}
+  <p2 style="margin:0; padding-top:0;; margin-bottom:05px">. <a href="{{ press.url }}" class="link">{{ press.text }}</a></p2>
+  <br/>
+  {% endfor %}
+{% endif %}
+
+{% if include.pub.video %}
+<iframe width="360" height="180" src="{{ include.pub.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br/>
+{% endif %}
+
+{% if include.pub.image %}
+<div class="images" style="margin-top:0;margin-bottom:40px;">
+  <img class="zoom" height="100" src="{{ include.pub.image }}">
+</div>
+{% endif %}
+
+{% if include.pub.images %}
+<div class="images" style="margin-top:0;margin-bottom:40px;">
+  {% for img in include.pub.images %}
+  <img class="zoom" height="100" src="{{ img }}">
+  {% endfor %}
+</div>
+{% endif %}

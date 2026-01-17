@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{% if page.title %}{{ page.title }}{% else %}Bernardo de Almeida{% endif %}</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+	</head>
+	<body>
+		{% include navigation.html %}
+
+		{{ content }}
+
+		<br />
+		<br />
+
+		{% include footer.html %}
+	</body>
+</html>
