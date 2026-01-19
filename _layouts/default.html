@@ -6,6 +6,40 @@
 	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Personal website and research portfolio of Bernardo Almeida{% endif %}">
 	<title>{% if page.title %}{{ page.title }} | {% endif %}Bernardo Almeida</title>
 	
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+	<meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}Bernardo Almeida">
+	<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}Personal website and research portfolio of Bernardo Almeida{% endif %}">
+	<meta property="og:image" content="{{ site.url }}{{ site.data.site_info.photo }}">
+	
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary">
+	<meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
+	<meta property="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}Bernardo Almeida">
+	<meta property="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}Personal website and research portfolio of Bernardo Almeida{% endif %}">
+	<meta property="twitter:image" content="{{ site.url }}{{ site.data.site_info.photo }}">
+	
+	<!-- JSON-LD Structured Data -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "{{ site.data.site_info.name }}",
+		"jobTitle": "{{ site.data.site_info.title }}",
+		"url": "{{ site.url }}",
+		"image": "{{ site.url }}{{ site.data.site_info.photo }}",
+		"sameAs": [
+			"{{ site.data.site_info.twitter }}",
+			"{{ site.data.site_info.github }}",
+			"{{ site.data.site_info.linkedin }}",
+			"{{ site.data.site_info.orcid }}",
+			"{{ site.data.site_info.researchgate }}"
+		],
+		"email": "{{ site.data.site_info.email }}"
+	}
+	</script>
+	
 	<!-- Web Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
