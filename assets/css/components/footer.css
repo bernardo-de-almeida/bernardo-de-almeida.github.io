@@ -1,0 +1,61 @@
+/* Footer Component */
+
+.footer {
+  border-top: 1px solid var(--color-neutral-300);
+  padding: var(--space-8) var(--space-4);
+  margin-top: var(--space-12);
+  background-color: var(--color-neutral-100);
+}
+
+.footer-container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+  margin-bottom: var(--space-4);
+}
+
+.footer-link {
+  color: var(--color-primary-700);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--border-radius-md);
+  transition: color var(--transition-base), background-color var(--transition-base);
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--color-primary-500);
+  background-color: var(--color-primary-100);
+  text-decoration: underline;
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+}
+
+.footer-copyright {
+  font-size: var(--text-sm);
+  color: var(--color-neutral-500);
+  margin-top: var(--space-4);
+}
+
+@media (max-width: 640px) {
+  .footer-menu {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .footer-link {
+    justify-content: center;
+  }
+}
+

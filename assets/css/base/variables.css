@@ -1,0 +1,86 @@
+/* Design Tokens - Color Palette */
+
+:root {
+  /* Primary Colors */
+  --color-primary-900: #1e3a8a;      /* Deep blue for headings */
+  --color-primary-700: #377eb8;      /* Current blue, now for links */
+  --color-primary-500: #4a90e2;      /* Lighter for hover states */
+  --color-primary-100: #e0f2fe;      /* Subtle backgrounds */
+
+  /* Neutral Colors */
+  --color-neutral-900: #1a202c;      /* Headings, strong text */
+  --color-neutral-700: #2d3748;      /* Body text */
+  --color-neutral-500: #718096;      /* Secondary text */
+  --color-neutral-300: #cbd5e0;      /* Borders */
+  --color-neutral-100: #f7fafc;      /* Backgrounds */
+  --color-neutral-50: #ffffff;       /* Pure white */
+
+  /* Accent Colors */
+  --color-accent-green: #10b981;     /* Success, awards */
+  --color-accent-amber: #f59e0b;     /* Highlights, featured */
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, system-ui, sans-serif;
+  --font-serif: 'Merriweather', Georgia, serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Type Scale (1.250 - Major Third) */
+  --text-xs: 0.75rem;    /* 12px - meta info */
+  --text-sm: 0.875rem;   /* 14px - secondary text */
+  --text-base: 1rem;     /* 16px - body */
+  --text-lg: 1.125rem;   /* 18px - large body */
+  --text-xl: 1.25rem;    /* 20px - h4 */
+  --text-2xl: 1.563rem;  /* 25px - h3 */
+  --text-3xl: 1.953rem;  /* 31px - h2 */
+  --text-4xl: 2.441rem;  /* 39px - h1 */
+  --text-5xl: 3.052rem;  /* 49px - hero */
+
+  /* Line Heights */
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+
+  /* Font Weights */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* Spacing System (8px base unit) */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.5rem;    /* 24px */
+  --space-6: 2rem;      /* 32px */
+  --space-8: 3rem;      /* 48px */
+  --space-10: 4rem;     /* 64px */
+  --space-12: 6rem;     /* 96px */
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+
+  /* Border Radius */
+  --border-radius-sm: 0.25rem;   /* 4px */
+  --border-radius-md: 0.5rem;    /* 8px */
+  --border-radius-lg: 1rem;      /* 16px */
+  --border-radius-full: 9999px;  /* Full circle */
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 350ms ease;
+
+  /* Breakpoints */
+  --breakpoint-sm: 640px;   /* Large phones */
+  --breakpoint-md: 768px;   /* Tablets */
+  --breakpoint-lg: 1024px;  /* Laptops */
+  --breakpoint-xl: 1280px;  /* Desktops */
+
+  /* Container */
+  --container-max-width: 1200px;
+}
+
