@@ -52,4 +52,12 @@
 		</p>
 		{% endfor %}
 	{% endif %}
+	
+	{% if include.highlight.links %}
+	<div class="research-highlight__links">
+		{% for link in include.highlight.links %}
+			<a href="{{ link.url }}" class="link-button">{{ link.text }}</a>
+		{% endfor %}
+	</div>
+	{% endif %}
 </article>
