@@ -46,7 +46,6 @@ tutorials/            # Tutorials page
 
 ## Documentation
 
-- [CONTRIBUTING.md](CONTRIBUTING.md) - Guide for adding content
 - [Jekyll Documentation](https://jekyllrb.com/docs/)
 - [GitHub Pages Documentation](https://docs.github.com/en/pages)
 
