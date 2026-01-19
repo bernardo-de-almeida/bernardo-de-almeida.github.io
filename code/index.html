@@ -3,86 +3,121 @@ layout: default
 title: Code
 ---
 
-<br/>
+<div class="code-page">
+	<div class="code-header">
+		<h1 class="code-header__title">Publications</h1>
+	</div>
 
-<div style="width:70%;margin-left:auto;margin-right:auto;">
-  <h1>Publications</h1>
+	<section class="code-section">
+		<h2 class="code-section__title">Selected</h2>
+		<div class="code-projects">
+			{% for pub in site.data.publications.selected %}
+				{% if pub.links %}
+					<div class="code-project-card">
+						<h3 class="code-project-card__title">
+							<a href="{{ pub.url }}">{{ pub.title }}</a>
+						</h3>
+						<p class="code-project-card__description">
+							{{ pub.authors }}. <em>{{ pub.journal }}</em> {{ pub.year }}
+						</p>
+						<div class="code-project-card__links">
+							{% for link in pub.links %}
+								<a href="{{ link.url }}" class="link-button">{{ link.text }}</a>
+							{% endfor %}
+						</div>
+					</div>
+				{% endif %}
+			{% endfor %}
+		</div>
+	</section>
 
-  <h2>Selected</h2>
-  {% for pub in site.data.publications.selected %}
-    {% if pub.links %}
-      <p class="pub" style="margin:0;">{{ pub.authors }}. <a href="{{ pub.url }}" class="paper">{{ pub.title }}</a>. <em>{{ pub.journal }}</em> {{ pub.year }}</p>
-      <p class="pub" style="margin:0; padding-top:0; margin-bottom:30px;">
-        {% for link in pub.links %}
-          {% unless forloop.first %} {% endunless %}<u><a href="{{ link.url }}" class="link">{{ link.text }}</a></u>
-        {% endfor %}
-      </p>
-    {% endif %}
-  {% endfor %}
+	<section class="code-section">
+		<h2 class="code-section__title">Preprints</h2>
+		<div class="code-projects">
+			{% for pub in site.data.publications.preprints %}
+				{% if pub.links %}
+					<div class="code-project-card">
+						<h3 class="code-project-card__title">
+							<a href="{{ pub.url }}">{{ pub.title }}</a>
+						</h3>
+						<p class="code-project-card__description">
+							{{ pub.authors }}. <em>{{ pub.journal }}</em> {{ pub.year }}
+							{% if pub.additional_text %}
+								<br>{{ pub.additional_text }}
+							{% endif %}
+						</p>
+						<div class="code-project-card__links">
+							{% for link in pub.links %}
+								<a href="{{ link.url }}" class="link-button">{{ link.text }}</a>
+							{% endfor %}
+						</div>
+					</div>
+				{% endif %}
+			{% endfor %}
+		</div>
+	</section>
 
-  <br/>
+	<section class="code-section">
+		<h2 class="code-section__title">Others</h2>
+		<div class="code-projects">
+			{% for pub in site.data.publications.others %}
+				{% if pub.links %}
+					<div class="code-project-card">
+						<h3 class="code-project-card__title">
+							<a href="{{ pub.url }}">{{ pub.title }}</a>
+						</h3>
+						<p class="code-project-card__description">
+							{{ pub.authors }}. <em>{{ pub.journal }}</em> {{ pub.year }}
+							{% if pub.additional_text %}
+								<br>{{ pub.additional_text }}
+							{% endif %}
+						</p>
+						<div class="code-project-card__links">
+							{% for link in pub.links %}
+								<a href="{{ link.url }}" class="link-button">{{ link.text }}</a>
+							{% endfor %}
+						</div>
+					</div>
+				{% endif %}
+			{% endfor %}
+		</div>
+	</section>
 
-  <h2>Preprints</h2>
-  {% for pub in site.data.publications.preprints %}
-    {% if pub.links %}
-      <p class="pub" style="margin:0;">{{ pub.authors }}. <a href="{{ pub.url }}" class="paper">{{ pub.title }}</a>. <em>{{ pub.journal }}</em> {{ pub.year }}</p>
-      <p class="pub" style="margin:0; padding-top:0; margin-bottom:{% if pub.additional_text %}0{% else %}30px{% endif %};">
-        {% for link in pub.links %}
-          {% unless forloop.first %} {% endunless %}<u><a href="{{ link.url }}" class="link">{{ link.text }}</a></u>
-        {% endfor %}
-      </p>
-      {% if pub.additional_text %}
-      <p class="pub" style="margin:0; padding-top:0; margin-bottom:30px;">{{ pub.additional_text }}</p>
-      {% endif %}
-    {% endif %}
-  {% endfor %}
+	<section class="code-section">
+		<h2 class="code-section__title">Softwares</h2>
+		<div class="code-projects">
+			{% for software in site.data.publications.softwares %}
+				<div class="code-project-card">
+					<h3 class="code-project-card__title">
+						<a href="{{ software.url }}">{{ software.title }}</a>
+					</h3>
+					<p class="code-project-card__description">
+						{{ software.authors }}. {{ software.journal }}
+					</p>
+					{% if software.links %}
+					<div class="code-project-card__links">
+						{% for link in software.links %}
+							<a href="{{ link.url }}" class="link-button">{{ link.text }}</a>
+						{% endfor %}
+					</div>
+					{% endif %}
+				</div>
+			{% endfor %}
+		</div>
+	</section>
 
-  <br/>
+	<section class="code-resources">
+		<h2 class="code-section__title">Other resources</h2>
+		<div class="code-resources__item">
+			<h3 class="code-resources__item-title">Reference compendium of non-redundant TF motifs</h3>
+			<p class="code-resources__item-description">
+				Clustering of 6,502 TF motif models from multiple species (mostly focused on <em>Drosophila</em> and human) by similarity to remove redundancy
+			</p>
+			<a href="https://github.com/bernardo-de-almeida/motif-clustering" class="link-button">CODE</a>
+		</div>
+	</section>
 
-  <h2>Others</h2>
-  {% for pub in site.data.publications.others %}
-    {% if pub.links %}
-      <p class="pub" style="margin:0;">{{ pub.authors }}. <a href="{{ pub.url }}" class="paper">{{ pub.title }}</a>. <em>{{ pub.journal }}</em> {{ pub.year }}</p>
-      <p class="pub" style="margin:0; padding-top:0; margin-bottom:{% if pub.additional_text %}0{% else %}30px{% endif %};">
-        {% for link in pub.links %}
-          {% unless forloop.first %} {% endunless %}<u><a href="{{ link.url }}" class="link">{{ link.text }}</a></u>
-        {% endfor %}
-      </p>
-      {% if pub.additional_text %}
-      <p class="pub" style="margin:0; padding-top:0; margin-bottom:30px;">{{ pub.additional_text }}</p>
-      {% endif %}
-    {% endif %}
-  {% endfor %}
-
-  <br/>
-
-  <h2>Softwares</h2>
-  {% for software in site.data.publications.softwares %}
-    <p class="pub" style="margin:0;">{{ software.authors }}. <a href="{{ software.url }}" class="paper">{{ software.title }}</a>. {{ software.journal }}</p>
-    {% if software.links %}
-    <p class="pub" style="margin:0; padding-top:0;">
-      {% for link in software.links %}
-        {% unless forloop.first %} {% endunless %}<a href="{{ link.url }}" class="link">{{ link.text }}</a>
-      {% endfor %}
-    </p>
-    {% endif %}
-  {% endfor %}
-
-  <br/>
-  <p>* equal contribution, § shared corresponding author</p>
-
-  <br/>
-  <h2>Other resources</h2>
-  <p class="pub" style="margin:0"><strong>Reference compendium of non-redundant TF motifs</strong> - Clustering of 6,502 TF motif models from multiple species (mostly focused on <em>Drosophila</em> and human) by similarity to remove redundancy</p>
-  <p class="pub" style="margin:0; padding-top:0;"><a href="https://github.com/bernardo-de-almeida/motif-clustering" class="link">CODE</a></p>
-
-  <br/>
-  <br/>
-  <p>Check my <a href="https://github.com/bernardo-de-almeida" class="link">GitHub</a> account for more details.</p>
-
-  <br/>
-  <br/>
+	<p class="code-footer">
+		Check my <a href="https://github.com/bernardo-de-almeida">GitHub</a> account for more details.
+	</p>
 </div>
-
-<br/>
-<br/>

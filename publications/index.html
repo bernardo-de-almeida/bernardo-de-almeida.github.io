@@ -3,61 +3,96 @@ layout: default
 title: Publications
 ---
 
-<br/>
+<div class="publications-page">
+	<div class="publications-header">
+		<h1 class="publications-header__title">Publications</h1>
+	</div>
 
-<div style="width:70%;margin-left:auto;margin-right:auto;">
-  <h1>Publications</h1>
+	{% assign total_count = site.data.publications.selected.size | plus: site.data.publications.preprints.size | plus: site.data.publications.others.size | plus: site.data.publications.workshop_papers.size %}
 
-  {% assign total_count = site.data.publications.selected.size | plus: site.data.publications.preprints.size | plus: site.data.publications.others.size | plus: site.data.publications.workshop_papers.size %}
+	<section class="publications-section">
+		<h2 class="publications-section__title">Selected</h2>
+		{% for pub in site.data.publications.selected %}
+			{% assign pub_number = total_count | minus: forloop.index0 %}
+			{% include publication.html pub=pub number=pub_number %}
+		{% endfor %}
+	</section>
 
-  <h2>Selected</h2>
-  {% for pub in site.data.publications.selected %}
-    {% assign pub_number = total_count | minus: forloop.index0 %}
-    {% include publication.html pub=pub number=pub_number %}
-  {% endfor %}
+	{% assign selected_count = site.data.publications.selected.size %}
 
-  {% assign selected_count = site.data.publications.selected.size %}
+	<section class="publications-section">
+		<h2 class="publications-section__title">Preprints</h2>
+		{% for pub in site.data.publications.preprints %}
+			{% assign pub_number = total_count | minus: selected_count | minus: forloop.index0 %}
+			{% include publication.html pub=pub number=pub_number %}
+		{% endfor %}
+	</section>
 
-  <h2>Preprints</h2>
-  {% for pub in site.data.publications.preprints %}
-    {% assign pub_number = total_count | minus: selected_count | minus: forloop.index0 %}
-    {% include publication.html pub=pub number=pub_number %}
-  {% endfor %}
-  <br/>
+	{% assign preprints_count = site.data.publications.preprints.size %}
 
-  {% assign preprints_count = site.data.publications.preprints.size %}
+	<section class="publications-section">
+		<h2 class="publications-section__title">Others</h2>
+		{% for pub in site.data.publications.others %}
+			{% assign pub_number = total_count | minus: selected_count | minus: preprints_count | minus: forloop.index0 %}
+			{% include publication.html pub=pub number=pub_number %}
+		{% endfor %}
+	</section>
 
-  <h2>Others</h2>
-  {% for pub in site.data.publications.others %}
-    {% assign pub_number = total_count | minus: selected_count | minus: preprints_count | minus: forloop.index0 %}
-    {% include publication.html pub=pub number=pub_number %}
-  {% endfor %}
+	{% assign others_count = site.data.publications.others.size %}
 
-  {% assign others_count = site.data.publications.others.size %}
+	<section class="publications-section">
+		<h2 class="publications-section__title">Workshop papers</h2>
+		{% for pub in site.data.publications.workshop_papers %}
+			{% assign pub_number = total_count | minus: selected_count | minus: preprints_count | minus: others_count | minus: forloop.index0 %}
+			{% include publication.html pub=pub number=pub_number %}
+		{% endfor %}
+	</section>
 
-  <h2>Workshop papers</h2>
-  {% for pub in site.data.publications.workshop_papers %}
-    {% assign pub_number = total_count | minus: selected_count | minus: preprints_count | minus: others_count | minus: forloop.index0 %}
-    {% include publication.html pub=pub number=pub_number %}
-  {% endfor %}
+	<section class="publications-section">
+		<h2 class="publications-section__title">PhD Thesis</h2>
+		{% for pub in site.data.publications.phd_thesis %}
+			<article class="publication-card">
+				<div class="publication-card__content">
+					<h3 class="publication-card__title">
+						<a href="{{ pub.url }}">{{ pub.title }}</a>
+					</h3>
+					<p class="publication-card__authors">{{ pub.authors }}</p>
+					<p class="publication-card__meta">
+						<span class="publication-card__year">{{ pub.year }}</span>
+					</p>
+				</div>
+			</article>
+		{% endfor %}
+	</section>
 
-  <h2>PhD Thesis</h2>
-  {% for pub in site.data.publications.phd_thesis %}
-    <p class="pub" style="margin:0">{{ pub.authors }}. <a href="{{ pub.url }}" class="paper">{{ pub.title }}</a>. {{ pub.year }}</p>
-  {% endfor %}
+	<div class="publications-footer">
+		<p>For an automatically updated version, check <a href="https://scholar.google.com/citations?hl=pt-PT&user=Tm0lHHsAAAAJ" class="link">Google Scholar</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/?term=de+Almeida%2C+Bernardo+P.%5BAuthor%5D" class="link">PubMed</a> or <a href="https://orcid.org/0000-0002-6084-6775" class="link">ORCID</a>.</p>
+	</div>
 
-  <br/>
-  <p>For an automatically updated version, check <a href="https://scholar.google.com/citations?hl=pt-PT&user=Tm0lHHsAAAAJ" class="link">Google Scholar</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/?term=de+Almeida%2C+Bernardo+P.%5BAuthor%5D" class="link">PubMed</a> or <a href="https://orcid.org/0000-0002-6084-6775" class="link">ORCID</a>.</p>
+	<section class="publications-section" id="softwares">
+		<h2 class="publications-section__title">Softwares</h2>
+		{% for software in site.data.publications.softwares %}
+			{% include publication.html pub=software %}
+		{% endfor %}
+	</section>
 
-  <br/>
-  <h2 id="softwares">Softwares</h2>
-  {% for software in site.data.publications.softwares %}
-    {% include publication.html pub=software %}
-  {% endfor %}
+	<section class="publications-section" id="patents">
+		<h2 class="publications-section__title">Patents</h2>
+		{% for patent in site.data.publications.patents %}
+			<article class="publication-card">
+				<div class="publication-card__content">
+					<h3 class="publication-card__title">
+						<a href="{{ patent.url }}">{{ patent.title }}</a>
+					</h3>
+					<p class="publication-card__authors">{{ patent.inventors }}</p>
+					<p class="publication-card__meta">
+						<span class="publication-card__journal">{{ patent.office }} Patent Application {{ patent.application_number }}</span>
+						<span class="publication-card__year">{{ patent.year }}</span>
+					</p>
+				</div>
+			</article>
+		{% endfor %}
+	</section>
 
-  <br/>
-  <p>* equal contribution, § shared corresponding author</p>
+	<p class="publications-note">* equal contribution, § shared corresponding author</p>
 </div>
-
-<br/>
-<br/>

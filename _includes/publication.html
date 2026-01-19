@@ -1,45 +1,65 @@
-<p class="pub" style="margin:0;">{% if include.number %}{{ include.number }}. {% endif %}{{ include.pub.authors }}. <a href="{{ include.pub.url }}" class="paper">{{ include.pub.title }}</a>. <em>{{ include.pub.journal }}</em> {{ include.pub.year }}</p>
-
-{% if include.pub.links or include.pub.preprint %}
-<p class="pub" style="margin:0; padding-top:0;">
-  {% if include.pub.links %}
-    {% for link in include.pub.links %}
-      {% unless forloop.first %} {% endunless %}<u><a href="{{ link.url }}" class="link">{{ link.text }}</a></u>
-    {% endfor %}
-  {% endif %}
-  {% if include.pub.preprint %}{% if include.pub.links %} {% endif %}<u><a href="{{ include.pub.preprint }}" class="link">Preprint</a></u>{% endif %}
-</p>
-{% endif %}
-
-{% if include.pub.featured_commentary %}
-  {% for commentary in include.pub.featured_commentary %}
-  <p2 style="margin:0; padding-top:0;; margin-bottom:05px">. Featured commentary: {{ commentary.author }}. "<a href="{{ commentary.url }}" class="link">{{ commentary.text }}</a>". {{ commentary.journal }}</p2>
-  <br/>
-  {% endfor %}
-{% endif %}
-
-{% if include.pub.press %}
-  {% for press in include.pub.press %}
-  <p2 style="margin:0; padding-top:0;; margin-bottom:05px">. <a href="{{ press.url }}" class="link">{{ press.text }}</a></p2>
-  <br/>
-  {% endfor %}
-{% endif %}
-
-{% if include.pub.video %}
-<iframe width="360" height="180" src="{{ include.pub.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br/>
-{% endif %}
-
-{% if include.pub.image %}
-<div class="images" style="margin-top:0;margin-bottom:40px;">
-  <img class="zoom" height="100" src="{{ include.pub.image }}">
-</div>
-{% endif %}
-
-{% if include.pub.images %}
-<div class="images" style="margin-top:0;margin-bottom:40px;">
-  {% for img in include.pub.images %}
-  <img class="zoom" height="100" src="{{ img }}">
-  {% endfor %}
-</div>
-{% endif %}
+<article class="publication-card">
+	<div class="publication-card__content">
+		{% if include.number %}
+		<span class="publication-card__number">{{ include.number }}.</span>
+		{% endif %}
+		
+		<h3 class="publication-card__title">
+			<a href="{{ include.pub.url }}">{{ include.pub.title }}</a>
+		</h3>
+		
+		<p class="publication-card__authors">{{ include.pub.authors }}</p>
+		
+		<p class="publication-card__meta">
+			<em class="publication-card__journal">{{ include.pub.journal }}</em>
+			<span class="publication-card__year">{{ include.pub.year }}</span>
+		</p>
+		
+		{% if include.pub.links or include.pub.preprint %}
+		<div class="publication-card__links">
+			{% if include.pub.links %}
+				{% for link in include.pub.links %}
+					<a href="{{ link.url }}" class="link-button">{{ link.text }}</a>
+				{% endfor %}
+			{% endif %}
+			{% if include.pub.preprint %}
+				<a href="{{ include.pub.preprint }}" class="link-button">Preprint</a>
+			{% endif %}
+		</div>
+		{% endif %}
+		
+		{% if include.pub.featured_commentary %}
+			{% for commentary in include.pub.featured_commentary %}
+			<p class="publication-card__commentary">
+				Featured commentary: {{ commentary.author }}. "<a href="{{ commentary.url }}">{{ commentary.text }}</a>". {{ commentary.journal }}
+			</p>
+			{% endfor %}
+		{% endif %}
+		
+		{% if include.pub.press %}
+			{% for press in include.pub.press %}
+			<p class="publication-card__press">
+				<a href="{{ press.url }}">{{ press.text }}</a>
+			</p>
+			{% endfor %}
+		{% endif %}
+		
+		{% if include.pub.video %}
+		<div class="publication-card__video">
+			<iframe src="{{ include.pub.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		{% endif %}
+		
+		{% if include.pub.images %}
+		<div class="publication-card__images">
+			{% for img in include.pub.images %}
+			<img src="{{ img }}" alt="Publication figure {{ forloop.index }}" loading="lazy">
+			{% endfor %}
+		</div>
+		{% endif %}
+	</div>
+	
+	{% if include.pub.image and include.pub.images == null %}
+	<img class="publication-card__image" src="{{ include.pub.image }}" alt="Publication figure" loading="lazy">
+	{% endif %}
+</article>

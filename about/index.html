@@ -3,52 +3,273 @@ layout: default
 title: About me
 ---
 
-<div class="slideshow-container">
-  <div class="mySlides fade">
-    <img src="/assets/images/Cascais.jpeg">
-    <div class="text">Cascais, my village</div>
-  </div>
+<div class="about-page">
+	<div class="about-header">
+		<h1 class="about-header__title">About me</h1>
+	</div>
 
-  <div class="mySlides fade">
-    <img src="/assets/images/Faro.jpeg">
-    <div class="text">Faro, in the south of Portugal, where I move to study at University</div>
-  </div>
+	<div class="about-content">
+		<div class="about-bio">
+			<div class="about-bio__text">
+				<p>I received my undergraduate degree in Biomedical Sciences, at the University of Algarve, where I had the chance to learn the concepts and techniques of medical science and molecular biology. There, I was exposed to diverse areas of research and interacted with several scientists. The most interesting part of that training was my final project, a scientific report in breast cancer genetic susceptibility with <a href="https://maialab.org" class="link">Ana Teresa Maia</a>. I continued onto the MSc in Oncobiology, at the same time that I was working at the <a href="https://maialab.org" class="link">Functional Genomics of Cancer Group</a> on the identification of new genetic risk markers for breast cancer and the cis-regulation of somatic mutations also in breast cancer.</p>
+				
+				<p>I spent the summer of 2016 as a visiting worker in the group of <a href="https://www.sanger.ac.uk/group/gaffney-group/" class="link">Daniel Gaffney</a> at the Sanger Institute, working on a map of histone Quantitative Trait Loci (hQTL) in induced Pluripotent Stem Cells (iPSCs) from the <a href="https://www.hipsci.org/" class="link">HipSci</a> consortium.</p>
+				
+				<p>I then joined <a href="https://imm.medicina.ulisboa.pt/group/distrans/" class="link">Nuno Barbosa Morais</a>'s computational biology group at Instituto de Medicina Molecular (IMM) to do my Master's thesis, focusing on the molecular mechanisms underlying tumour development. In parallel, I was involved in multiple collaborations involving studying the role of lncRNAs in cancer, the impact of cancer-associated DNA variants on splicing deregulation, and using large-scale pharmacogenomics data to identify natural compounds, and their respective targets, with novel therapeutic potential in cancer.</p>
+				
+				<p>In 2018 I joined the lab of <a href="https://starklab.org/" class="link">Alex Stark Lab</a>, Research Institute of Molecular Pathology (<a href="https://www.imp.ac.at/groups/alexander-stark/" class="link">IMP</a>), to do my PhD. There I used deep learning approaches and massively parallel reporter assays to understand the cis-regulatory information encoded in the sequence of transcriptional enhancers.</p>
+				
+				<p>In the summer of 2023 I joined <a href="https://www.instadeep.com/" class="link">InstaDeep</a> as an AI Research Scientist, where I am building <a href="https://www.biorxiv.org/content/10.64898/2025.12.22.695963v1" class="link">large language foundational models for biology</a>.</p>
+				
+				<p><strong><i>My ultimate goal is to build computational models that can read the human genome and interpret its variation.</strong></i></p>
+				
+				<p>I love science and I do sports in my spare time!</p>
+			</div>
+			
+			<blockquote class="about-bio__quote">
+				"The people who are crazy enough to think they can change the world are the ones who do!" - Steve Jobs
+			</blockquote>
+		</div>
 
-  <div class="mySlides fade">
-    <img src="/assets/images/Sanger.jpeg">
-    <div class="text">Sanger Institute, learned a lot during the internship there</div>
-  </div>
+		<div class="about-slideshow">
+			<div class="slideshow-container">
+				<div class="slideshow-slide active">
+					<img src="/assets/images/Cascais.jpeg" alt="Cascais, my village">
+					<div class="slideshow-caption">Cascais, my village</div>
+				</div>
 
-  <div class="mySlides fade">
-    <img src="/assets/images/IMM.jpeg">
-    <div class="text">IMM, where I did my Master's thesis with Nuno Barbosa Morais</div>
-  </div>
+				<div class="slideshow-slide">
+					<img src="/assets/images/Faro.jpeg" alt="Faro, in the south of Portugal, where I move to study at University">
+					<div class="slideshow-caption">Faro, in the south of Portugal, where I move to study at University</div>
+				</div>
 
-  <div class="mySlides fade">
-    <img src="/assets/images/Vienna.jpeg">
-    <div class="text">Vienna, lovely city where I spent my PhD years</div>
-  </div>
+				<div class="slideshow-slide">
+					<img src="/assets/images/Sanger.jpeg" alt="Sanger Institute, learned a lot during the internship there">
+					<div class="slideshow-caption">Sanger Institute, learned a lot during the internship there</div>
+				</div>
 
-  <div class="mySlides fade">
-    <img src="/assets/images/IMP.jpeg">
-    <div class="text">IMP, where I did my PhD studies with Alex Stark</div>
-  </div>
+				<div class="slideshow-slide">
+					<img src="/assets/images/IMM.jpeg" alt="IMM, where I did my Master's thesis with Nuno Barbosa Morais">
+					<div class="slideshow-caption">IMM, where I did my Master's thesis with Nuno Barbosa Morais</div>
+				</div>
 
-  <div class="mySlides fade">
-    <img src="/assets/images/Paris.jpeg">
-    <div class="text">Paris, aii Paris...</div>
-  </div>
-</div>
-<br>
+				<div class="slideshow-slide">
+					<img src="/assets/images/Vienna.jpeg" alt="Vienna, lovely city where I spent my PhD years">
+					<div class="slideshow-caption">Vienna, lovely city where I spent my PhD years</div>
+				</div>
 
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
-  <span class="dot" onclick="currentSlide(6)"></span>
-  <span class="dot" onclick="currentSlide(7)"></span>
+				<div class="slideshow-slide">
+					<img src="/assets/images/IMP.jpeg" alt="IMP, where I did my PhD studies with Alex Stark">
+					<div class="slideshow-caption">IMP, where I did my PhD studies with Alex Stark</div>
+				</div>
+
+				<div class="slideshow-slide">
+					<img src="/assets/images/Paris.jpeg" alt="Paris, aii Paris...">
+					<div class="slideshow-caption">Paris, aii Paris...</div>
+				</div>
+			</div>
+
+			<div class="slideshow-controls">
+				<button class="slideshow-dot active" onclick="currentSlide(1)" aria-label="Go to slide 1"></button>
+				<button class="slideshow-dot" onclick="currentSlide(2)" aria-label="Go to slide 2"></button>
+				<button class="slideshow-dot" onclick="currentSlide(3)" aria-label="Go to slide 3"></button>
+				<button class="slideshow-dot" onclick="currentSlide(4)" aria-label="Go to slide 4"></button>
+				<button class="slideshow-dot" onclick="currentSlide(5)" aria-label="Go to slide 5"></button>
+				<button class="slideshow-dot" onclick="currentSlide(6)" aria-label="Go to slide 6"></button>
+				<button class="slideshow-dot" onclick="currentSlide(7)" aria-label="Go to slide 7"></button>
+			</div>
+
+			<div class="about-timeline">
+		<div class="timeline-container">
+			<div class="timeline-column">
+				<h2 class="timeline-heading">EDUCATION</h2>
+				<div class="timeline-items">
+					<div class="timeline-item">
+						<div class="timeline-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+								<path d="M6 12v5c3 3 9 3 12 0v-5"/>
+							</svg>
+						</div>
+						<div class="timeline-content">
+							<h3 class="timeline-title">Research Institute of Molecular Pathology (IMP)</h3>
+							<p class="timeline-subtitle">PhD in Computational Biology</p>
+							<p class="timeline-dates">2018 – 2023</p>
+							<p class="timeline-location">
+								<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+									<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+									<circle cx="12" cy="10" r="3"/>
+								</svg>
+								Vienna, Austria
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+								<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+							</svg>
+						</div>
+						<div class="timeline-content">
+							<h3 class="timeline-title">University of Algarve</h3>
+							<p class="timeline-subtitle">MSc in Oncobiology</p>
+							<p class="timeline-dates">2015 – 2017</p>
+							<p class="timeline-location">
+								<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+									<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+									<circle cx="12" cy="10" r="3"/>
+								</svg>
+								Faro, Portugal
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+								<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+							</svg>
+						</div>
+						<div class="timeline-content">
+							<h3 class="timeline-title">University of Algarve</h3>
+							<p class="timeline-subtitle">BSc in Biomedical Sciences</p>
+							<p class="timeline-dates">2012 – 2015</p>
+							<p class="timeline-location">
+								<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+									<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+									<circle cx="12" cy="10" r="3"/>
+								</svg>
+								Faro, Portugal
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="timeline-column">
+				<h2 class="timeline-heading">EXPERIENCE</h2>
+				<div class="timeline-items">
+					<div class="timeline-item">
+						<div class="timeline-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M12 2L2 7l10 5 10-5-10-5z"/>
+								<path d="M2 17l10 5 10-5"/>
+								<path d="M2 12l10 5 10-5"/>
+								<circle cx="12" cy="12" r="1" fill="currentColor"/>
+							</svg>
+						</div>
+						<div class="timeline-content">
+							<h3 class="timeline-title">InstaDeep</h3>
+							<p class="timeline-subtitle">AI Senior Research Scientist</p>
+							<p class="timeline-dates">2023 – Present</p>
+							<p class="timeline-location">
+								<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+									<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+									<circle cx="12" cy="10" r="3"/>
+								</svg>
+								Paris, France
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<circle cx="12" cy="12" r="10"/>
+								<path d="M12 6v6l4 2"/>
+							</svg>
+						</div>
+						<div class="timeline-content">
+							<h3 class="timeline-title">Research Institute of Molecular Pathology (IMP)</h3>
+							<p class="timeline-subtitle">PhD Student</p>
+							<p class="timeline-dates">2018 – 2023</p>
+							<p class="timeline-location">
+								<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+									<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+									<circle cx="12" cy="10" r="3"/>
+								</svg>
+								Vienna, Austria
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+								<line x1="9" y1="3" x2="9" y2="21"/>
+								<line x1="3" y1="9" x2="21" y2="9"/>
+							</svg>
+						</div>
+						<div class="timeline-content">
+							<h3 class="timeline-title">Instituto de Medicina Molecular (IMM)</h3>
+							<p class="timeline-subtitle">Master's Thesis Researcher</p>
+							<p class="timeline-dates">2016 – 2018</p>
+							<p class="timeline-location">
+								<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+									<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+									<circle cx="12" cy="10" r="3"/>
+								</svg>
+								Lisbon, Portugal
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+								<circle cx="9" cy="7" r="4"/>
+								<path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+								<path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+							</svg>
+						</div>
+						<div class="timeline-content">
+							<h3 class="timeline-title">Sanger Institute</h3>
+							<p class="timeline-subtitle">Visiting Researcher</p>
+							<p class="timeline-dates">Summer 2016</p>
+							<p class="timeline-location">
+								<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+									<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+									<circle cx="12" cy="10" r="3"/>
+								</svg>
+								Cambridge, UK
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+								<circle cx="12" cy="12" r="10"/>
+								<path d="M12 6v6l4 2"/>
+								<line x1="12" y1="2" x2="12" y2="4"/>
+								<line x1="12" y1="20" x2="12" y2="22"/>
+								<line x1="2" y1="12" x2="4" y2="12"/>
+								<line x1="20" y1="12" x2="22" y2="12"/>
+							</svg>
+						</div>
+						<div class="timeline-content">
+							<h3 class="timeline-title">Centre for Biomedical Research, University of Algarve</h3>
+							<p class="timeline-subtitle">Research Scientist</p>
+							<p class="timeline-dates">2015 – 2016</p>
+							<p class="timeline-location">
+								<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+									<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+									<circle cx="12" cy="10" r="3"/>
+								</svg>
+								Faro, Portugal
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <script>
@@ -56,37 +277,31 @@ var slideIndex = 0;
 showSlides();
 
 function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 8000); // Change image every 8 seconds
+	var i;
+	var slides = document.getElementsByClassName("slideshow-slide");
+	var dots = document.getElementsByClassName("slideshow-dot");
+	
+	for (i = 0; i < slides.length; i++) {
+		slides[i].classList.remove("active");
+	}
+	
+	slideIndex++;
+	if (slideIndex > slides.length) {
+		slideIndex = 1;
+	}
+	
+	for (i = 0; i < dots.length; i++) {
+		dots[i].classList.remove("active");
+	}
+	
+	slides[slideIndex - 1].classList.add("active");
+	dots[slideIndex - 1].classList.add("active");
+	
+	setTimeout(showSlides, 8000); // Change image every 8 seconds
+}
+
+function currentSlide(n) {
+	slideIndex = n - 1;
+	showSlides();
 }
 </script>
-
-<br/>
-
-<div style="width:70%;margin-left:auto;margin-right:auto;">
-  <h1>About me</h1>
-  <p>I received my undergraduate degree in Biomedical Sciences, at the University of Algarve, where I had the chance to learn the concepts and techniques of medical science and molecular biology. There, I was exposed to diverse areas of research and interacted with several scientists. The most interesting part of that training was my final project, a scientific report in breast cancer genetic susceptibility with <a href="https://maialab.org" class="link">Ana Teresa Maia</a>. I continued onto the MSc in Oncobiology, at the same time that I was working at the <a href="https://maialab.org" class="link">Functional Genomics of Cancer Group</a> on the identification of new genetic risk markers for breast cancer and the cis-regulation of somatic mutations also in breast cancer.</p>
-  <p>I spent the summer of 2016 as a visiting worker in the group of <a href="https://www.sanger.ac.uk/group/gaffney-group/" class="link">Daniel Gaffney</a> at the Sanger Institute, working on a map of histone Quantitative Trait Loci (hQTL) in induced Pluripotent Stem Cells (iPSCs) from the <a href="https://www.hipsci.org/" class="link">HipSci</a> consortium.</p>
-  <p>I then joined <a href="https://imm.medicina.ulisboa.pt/group/distrans/" class="link">Nuno Barbosa Morais</a>'s computational biology group at Instituto de Medicina Molecular (IMM) to do my Master's thesis, focusing on the molecular mechanisms underlying tumour development. In parallel, I was involved in multiple collaborations involving studying the role of lncRNAs in cancer, the impact of cancer-associated DNA variants on splicing deregulation, and using large-scale pharmacogenomics data to identify natural compounds, and their respective targets, with novel therapeutic potential in cancer.</p>
-  <p>In 2018 I joined the lab of <a href="https://starklab.org/" class="link">Alex Stark Lab</a>, Research Institute of Molecular Pathology (<a href="https://www.imp.ac.at/groups/alexander-stark/" class="link">IMP</a>), to do my PhD. There I used deep learning approaches and massively parallel reporter assays to understand the cis-regulatory information encoded in the sequence of transcriptional enhancers.</p>
-  <p>In the summer of 2023 I joined <a href="https://www.instadeep.com/" class="link">InstaDeep</a> as an AI Research Scientist, where I am building <a href="https://www.biorxiv.org/content/10.64898/2025.12.22.695963v1" class="link">large language foundational models for biology</a>.</p>
-  <p><strong><i>My ultimate goal is to build computational models that can read the human genome and interpret its variation.</strong></i></p>
-  <p>I love science and I do sports in my spare time!</p>
-  <br/>
-  <p><i>"The people who are crazy enough to think they can change the world are the ones who do!"</i> Steve Jobs</p>
-</div>
-
-<br/>
-<br/>

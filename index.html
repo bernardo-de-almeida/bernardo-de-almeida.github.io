@@ -3,32 +3,92 @@ layout: default
 title: Bernardo de Almeida
 ---
 
-<div class="row">
-    <div class="column left">
-        <img class="center" src="{{ site.data.site_info.photo }}" alt="Avatar" style="width:300px">
-        <br/>
-        <p style="text-align:center"><strong><i>{{ site.data.site_info.title }}</i></strong></p>
-        <br/>
-        <p><i>"{{ site.data.site_info.quote }}"</i></p>
-        <p style="margin:0;padding-top:0;text-align:right">{{ site.data.site_info.quote_author }}</p>
-    </div>
-    <div class="column right">
-        <h1>{{ site.data.site_info.name }}</h1>
-        <p>{{ site.data.site_info.bio }}</p>
-        <br/>
-        <h1>News</h1>
-        {% for item in site.data.news %}
-          {% include news-item.html news=item %}
-          <br/>
-        {% endfor %}
-        <br/>
-        <br/>
-        <h1>Research highlights</h1>
-        {% for highlight in site.data.research_highlights %}
-          {% include research-highlight.html highlight=highlight %}
-        {% endfor %}
-        <br/>
-        <br/>
-        <p>Full <a href="/publications/" class="link">publications</a> list.</p>
-    </div>
+<div class="homepage">
+	<div class="homepage-hero">
+		<img class="homepage-hero__photo" src="{{ site.data.site_info.photo }}" alt="Bernardo P. de Almeida">
+		<h1 class="homepage-hero__title">{{ site.data.site_info.name }}</h1>
+		<p class="homepage-hero__subtitle"><strong><i>{{ site.data.site_info.title }}</i></strong></p>
+		<p class="homepage-hero__quote">"{{ site.data.site_info.quote }}"</p>
+		<p class="homepage-hero__quote-author">{{ site.data.site_info.quote_author }}</p>
+	</div>
+	
+	<div class="homepage-content">
+		<div class="homepage-section">
+			<h2 class="homepage-section__title">About</h2>
+			<div class="homepage-about">
+				<div class="homepage-about__header">
+					<img class="homepage-about__photo" src="{{ site.data.site_info.photo }}" alt="Bernardo P. de Almeida">
+					<div class="homepage-about__header-text">
+						<h3 class="homepage-about__name">{{ site.data.site_info.name }}</h3>
+						<p class="homepage-about__title">{{ site.data.site_info.title }}</p>
+					</div>
+				</div>
+				<div class="homepage-about__bio">
+					{{ site.data.site_info.bio }}
+				</div>
+				<div class="homepage-about__expertise">
+					<span class="expertise-badge">AI Research</span>
+					<span class="expertise-badge">Genomics</span>
+					<span class="expertise-badge">Deep Learning</span>
+					<span class="expertise-badge">Gene Regulation</span>
+				</div>
+				<div class="homepage-about__social">
+					<a href="{{ site.data.site_info.email | prepend: 'mailto:' }}" class="social-link" aria-label="Email">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+							<polyline points="22,6 12,13 2,6"/>
+						</svg>
+					</a>
+					<a href="{{ site.data.site_info.twitter }}" class="social-link" aria-label="Twitter" target="_blank" rel="noopener">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+						</svg>
+					</a>
+					<a href="{{ site.data.site_info.github }}" class="social-link" aria-label="GitHub" target="_blank" rel="noopener">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+						</svg>
+					</a>
+					<a href="{{ site.data.site_info.linkedin }}" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+							<rect x="2" y="9" width="4" height="12"/>
+							<circle cx="4" cy="4" r="2"/>
+						</svg>
+					</a>
+					<a href="{{ site.data.site_info.orcid }}" class="social-link" aria-label="ORCID" target="_blank" rel="noopener">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+							<path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm-2.033 16.988H7.977v-9.98h1.99v9.98zm-.995-11.346c-.64 0-1.158-.518-1.158-1.158 0-.64.518-1.158 1.158-1.158.64 0 1.158.518 1.158 1.158 0 .64-.518 1.158-1.158 1.158zm9.034 11.346h-1.99v-4.806c0-1.19-.024-2.716-1.656-2.716-1.656 0-1.909 1.293-1.909 2.634v4.888h-1.99v-9.98h1.91v1.35h.027c.276-.523.95-1.075 1.956-1.075 2.09 0 2.476 1.376 2.476 3.168v5.537z"/>
+						</svg>
+					</a>
+				</div>
+				<a href="/about/" class="homepage-about__cta">
+					Learn more about me
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<line x1="5" y1="12" x2="19" y2="12"/>
+						<polyline points="12 5 19 12 12 19"/>
+					</svg>
+				</a>
+			</div>
+		</div>
+		
+		<div class="homepage-section">
+			<h2 class="homepage-section__title">News</h2>
+			<div class="homepage-news-container">
+				{% for item in site.data.news %}
+					{% include news-item.html news=item %}
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	
+	<div class="homepage-highlights">
+		<h2 class="homepage-section__title">Research highlights</h2>
+		{% for highlight in site.data.research_highlights %}
+			{% include research-highlight.html highlight=highlight %}
+		{% endfor %}
+		<p class="homepage-highlights__footer">
+			Full <a href="/publications/" class="link">publications</a> list.
+		</p>
+	</div>
 </div>

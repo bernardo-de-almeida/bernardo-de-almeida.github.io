@@ -1,9 +1,33 @@
+- date: "2025-12"
+  text: 'We are excited to introduce Nucleotide Transformer v3 (NTv3) - InstaDeep''s new foundation model for long-range multi-species genomics 🎉'
+  additional_text: ' <a href="https://www.biorxiv.org/content/10.64898/2025.12.22.695963v1" class="link">Preprint</a>, <a href="https://huggingface.co/spaces/InstaDeepAI/ntv3" class="link">HuggingFace Space</a>, <a href="https://x.com/deAlmeida_BP/status/2003464562670977234" class="link">Twitter thread</a>'
+  images:
+    - "/assets/images/NTv3.png"
+
+- date: "2025-10"
+  text: '"Annotating the genome at single-nucleotide resolution" accepted to <a href="https://www.nature.com/articles/s41592-025-02881-2" class="link">Nature Methods</a>'
+  additional_text: ' <a href="https://instadeep.com/2025/10/genome-annotation-with-segmentnt/" class="link">Blog post</a>'
+
+- date: "2025-06"
+  text: 'We just open-sourced the first large-scale dataset designed to train conversational agents on biological sequences 🧬'
+  additional_text: ' <a href="https://www.linkedin.com/posts/thomas-pierrot-120a43128_we-just-open-sourced-the-first-large-scale-activity-7346225275170414592-wajJ/" class="link">LinkedIn post</a>, <a href="https://www.nature.com/articles/s42256-025-01047-1" class="link">paper</a>, <a href="https://huggingface.co/datasets/InstaDeepAI/chatnt" class="link">Hugging Face dataset</a>'
+
+- date: "2025-06"
+  text: 'Our paper "A multimodal conversational agent for DNA, RNA and protein tasks" was featured on the cover of <a href="https://www.nature.com/articles/s42256-025-01047-1" class="link">Nature Machine Intelligence</a>!'
+  additional_text: ' <a href="https://instadeep.com/2025/06/talking-biology-with-chatnt/" class="link">Blog post</a>'
+  images:
+    - "/assets/images/chatnt_cover.jpeg"
+
+- date: "2024-11"
+  text: 'The Nucleotide Transformer paper is now published in <a href="https://www.nature.com/articles/s41592-024-02523-z" class="link">Nature Methods</a>'
+  additional_text: ' <a href="https://instadeep.com/2024/12/decoding-our-genome-with-nucleotide-transformers/" class="link">Blog post</a>'
+
 - date: "2024-09"
   text: 'Our work on the "Nucleotide Transformer: building and evaluating robust foundation models for genomics" was presented at <a href="https://meetings.cshl.edu/meetings.aspx?meet=SYSTEMS&year=24" class="link">CSHL Systems Biology</a> (March 2024) and <a href="https://sites.google.com/cs.washington.edu/mlcb2024/schedule?authuser=0" class="link">MLCB</a> (September 2024) conferences'
 
 - date: "2024-05"
   text: 'Very happy to receive <a href="https://www.imp.ac.at/news/article/life-science-research-award-for-bernardo-almeida/" class="link">2024 Denise P. Barlow Award</a> for best PhD thesis on biological mechanisms in Vienna, Austria (May 2024)'
-  additional_text: '. For more information see <a href="https://www.imp.ac.at/news/article/bernardo-de-almeida-wins-2024-denise-p-barlow-award" class="link">here</a>'
+  additional_text: ' For more information see <a href="https://www.imp.ac.at/news/article/bernardo-de-almeida-wins-2024-denise-p-barlow-award" class="link">here</a>'
   images:
     - "/assets/images/DeniseBarlowAward2024.png"
 
@@ -31,14 +55,14 @@
 
 - date: "2022-09"
   text: 'Very honoured to receive <a href="https://www.imp.ac.at/news/article/life-science-research-award-for-bernardo-almeida/" class="link">The Life Science Research Award Austria 2022</a> from the Austrian Society for Molecular Biosciences and Biotechnology (ÖGMBT) in the category "Basic Science" (September 2022)'
-  additional_text: '. For more information see the <a href="https://oegmbt.at/awards" class="link">official press release</a>'
+  additional_text: ' For more information see the <a href="https://oegmbt.at/awards" class="link">official press release</a>'
   images:
     - "/assets/images/LifeSciencesAward2022.png"
     - "/assets/images/LifeSciencesAward2022_group.jpg"
 
 - date: "2022-08"
   text: 'Presented a poster at the <a href="https://www.embl.de/training/events/2022/TRM22-01/" class="link">15th EMBL Conference: Transcription and Chromatin</a> about our new <a href="https://www.biorxiv.org/content/10.1101/2022.08.31.506061v1" class="link">preprint</a> on the flexibility of enhancer sequences and motif syntax (August 2022)'
-  additional_text: '. Check out the poster <a href="/assets/others/deAlmeida_EMBL_TranscChromat2022.png" class="link">here</a>'
+  additional_text: ' Check out the poster <a href="/assets/others/deAlmeida_EMBL_TranscChromat2022.png" class="link">here</a>'
 
 - date: "2022-07"
   text: 'Very happy to see our <a href="https://www.nature.com/articles/s41588-022-01048-5" class="link">DeepSTARR paper</a> highlighted in Nature Methods: "<a href="https://www.nature.com/articles/s41592-022-01557-5" class="link">Predicting and designing enhancers</a>" (July 2022)'

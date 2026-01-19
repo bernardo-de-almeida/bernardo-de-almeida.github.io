@@ -1,4 +1,43 @@
 selected:
+- authors: <strong>B.P. de Almeida*</strong>, G. Richard*, H. Dalla-Torre, C. Blum, L. Hexemer, P. Pandey, S. Laurent, M. Lopez, A. Laterre, M. Lang, U. Şahin, K. Beguir, T. Pierrot
+  title: A multimodal conversational agent for DNA, RNA and protein tasks
+  journal: Nature Machine Intelligence
+  year: 2025
+  url: https://www.nature.com/articles/s42256-025-01047-1
+  preprint: https://www.biorxiv.org/content/10.1101/2024.04.30.591835v2
+  image: /assets/images/chatnt_cover.jpeg
+  press:
+  - text: Twitter thread
+    url: https://x.com/instadeepai/status/1785339330052890860
+  - text: Blog post
+    url: https://instadeep.com/2025/06/talking-biology-with-chatnt/
+  links:
+  - text: CODE
+    url: https://github.com/instadeepai/nucleotide-transformer
+  - text: MODEL
+    url: https://huggingface.co/InstaDeepAI/ChatNT
+  - text: DATA
+    url: https://huggingface.co/datasets/InstaDeepAI/ChatNT_training_data
+- authors: <strong>B.P. de Almeida*</strong>, H. Dalla-Torre*, G. Richard, C. Blum, L. Hexemer, M. Gélard, P. Pandey, S. Laurent, A. Laterre, M. Lang, U. Şahin, K. Beguir, T. Pierrot
+  title: 'SegmentNT: annotating the genome at single-nucleotide resolution with DNA foundation models'
+  journal: Nature Methods
+  year: 2025
+  url: https://www.nature.com/articles/s41592-025-02881-2
+  preprint: https://www.biorxiv.org/content/10.1101/2024.03.14.584712v2
+  additional_text: Example notebooks are available on <a href="https://colab.research.google.com/github/instadeepai/nucleotide-transformer/blob/main/examples/inference_segment_nt.ipynb" class="link">Google Colab</a>
+  image: /assets/images/segmentNT.png
+  press:
+  - text: Twitter thread
+    url: https://twitter.com/instadeepai/status/1768313528052482316
+  - text: Blog post
+    url: https://instadeep.com/2025/10/genome-annotation-with-segmentnt/
+  links:
+  - text: CODE
+    url: https://github.com/instadeepai/nucleotide-transformer
+  - text: MODEL
+    url: https://huggingface.co/InstaDeepAI/segment_nt
+  - text: HUGGINGFACE COLLECTION
+    url: https://huggingface.co/collections/InstaDeepAI/segmentnt
 - authors: <strong>B.P. de Almeida</strong>, C. Schaub, M. Pagani, S. Secchia, E.E.M. Furlong, A. Stark
   title: Targeted design of synthetic enhancers for selected tissues in the Drosophila embryo
   journal: Nature
@@ -77,65 +116,48 @@ selected:
   journal: BMC Cancer
   year: 2019
   url: https://bmccancer.biomedcentral.com/articles/10.1186/s12885-019-5403-0
+
 preprints:
-- authors: G. Richard*, <strong>B.P. de Almeida*</strong>, H. Dalla-Torre, C. Blum, L. Hexemer, P. Pandey, S. Laurent, M. Lopez, A. Laterre, M. Lang, U. Şahin, K. Beguir, T. Pierrot
-  title: 'ChatNT: A Multimodal Conversational Agent for DNA, RNA and Protein Tasks'
+- authors: S. Boshar, B. Evans, Z. Tang, A. Picard, Y. Adel, F.K. Lorbeer, C. Rajesh, T. Karch, S. Sidbon, D. Emms, J. Mendoza-Revilla, F. Al-Ani, E. Seitz, Y. Schiff, Y. Bornachot, A. Hernandez, M. Lopez, A. Laterre, K. Beguir, P. Koo, V. Kuleshov, A. Stark, <strong>B.P. de Almeida§</strong>, T. Pierrot§
+  title: 'A foundational model for joint sequence-function multi-species modeling at scale for long-range genomic prediction'
   journal: bioRxiv
-  year: 2024
-  url: https://www.biorxiv.org/content/10.1101/2024.04.30.591835v2
-- authors: <strong>B.P. de Almeida*</strong>, H. Dalla-Torre*, G. Richard, C. Blum, L. Hexemer, M. Gélard, P. Pandey, S. Laurent, A. Laterre, M. Lang, U. Şahin, K. Beguir, T. Pierrot
-  title: 'SegmentNT: annotating the genome at single-nucleotide resolution with DNA foundation models'
-  journal: bioRxiv
-  year: 2024
-  url: https://www.biorxiv.org/content/10.1101/2024.03.14.584712v2
-  additional_text: Example notebooks are available on <a href="https://colab.research.google.com/github/instadeepai/nucleotide-transformer/blob/main/examples/inference_segment_nt.ipynb" class="link">Google Colab</a>
-  image: /assets/images/segmentNT.png
+  year: 2025
+  url: https://www.biorxiv.org/content/10.64898/2025.12.22.695963v1
+  image: /assets/images/NTv3.png
   press:
   - text: Twitter thread
-    url: https://twitter.com/instadeepai/status/1768313528052482316
+    url: https://x.com/deAlmeida_BP/status/2003464562670977234
   links:
   - text: CODE
     url: https://github.com/instadeepai/nucleotide-transformer
-  - text: MODEL
-    url: https://huggingface.co/InstaDeepAI/segment_nt
-- authors: E. Trop*, C.-H. Kao*, M. Polen*, Y. Schiff*, <strong>B.P. de Almeida</strong>, A. Gokaslan, T. Pierrot, V. Kuleshov
-  title: 'Advancing DNA Language Models: The Genomics Long-Range Benchmark'
-  journal: MLGenX ICLR Workshop
-  year: 2024
-  url: https://openreview.net/pdf?id=M3VlreGcC1
-  links:
-  - text: DATA
-    url: https://huggingface.co/datasets/InstaDeepAI/genomics-long-range-benchmark
-- authors: J. J. Garau-Luis*, P. Bordes*, L. Gonzalez*, M. Roller, <strong>B.P. de Almeida</strong>, L. Hexemer, C. Blum, S. Laurent, J. Grzegorzewski, M. Lang, T. Pierrot§, G. Richard§
-  title: Multi-modal Transfer Learning between Biological Foundation Models
-  journal: arXiv
-  year: 2024
-  url: https://arxiv.org/abs/2406.14150
-  links:
-  - text: MODEL
-    url: https://huggingface.co/isoformer-anonymous/Isoformer
-- authors: V. Loubiere, <strong>B.P. de Almeida</strong>, M. Pagani, A. Stark
-  title: Developmental and housekeeping transcriptional programs display distinct modes of enhancer-enhancer cooperativity in <em>Drosophila</em>
-  journal: bioRxiv
-  year: 2023
-  url: https://www.biorxiv.org/content/10.1101/2023.10.10.561770v1
-  links:
-  - text: CODE
-    url: https://github.com/vloubiere/git_peSTARRSeq
+  - text: SITE
+    url: https://huggingface.co/spaces/InstaDeepAI/ntv3
+  - text: HUGGINGFACE
+    url: https://huggingface.co/collections/InstaDeepAI/nucleotide-transformer-v3
 - authors: N. Moreno-Marin, G. Marteil, N.C. Fresmann, <strong>B.P. de Almeida</strong>, K. Dores, R. Fragoso, J. Cardoso, J.B. Pereira-Leal, J.T. Barata, S. Godinho, N.L. Barbosa-Morais, M. Bettencourt-Dias
   title: High prevalence and dependence of centrosome clustering in mesenchymal tumors and leukemia
   journal: bioRxiv
   year: 2023
   url: https://www.biorxiv.org/content/10.1101/2023.03.13.532472v1
-- authors: J.M. Xavier, R. Magno, R. Russell, <strong>B.P. de Almeida</strong>, A. Jacinta-Fernandes, A. Duarte, M. Dunning, S. Samarajiwa, M. O'Reilly, C.L. Rocha, N. Rosli, B.A.J. Ponder, A.T. Maia
-  title: Mapping of cis-regulatory variants by differential allelic expression analysis identifies candidate risk variants and target genes of 27 breast cancer risk loci
-  journal: medRxiv
-  year: 2022
-  url: https://www.medrxiv.org/content/10.1101/2022.03.08.22271889v1
+
+others:
+- authors: Y. Schiff, S.S. Sahoo, H. Phung, G. Wang, S. Boshar, H. Dalla-Torre, <strong>B.P. de Almeida</strong>, A. Rush, T. Pierrot, V. Kuleshov
+  title: Simple Guidance Mechanisms for Discrete Diffusion Models
+  journal: ICLR
+  year: 2025
+  url: https://arxiv.org/abs/2412.10193
   links:
   - text: CODE
-    url: https://github.com/maialab/DaeBreastMicroarrays
-others:
+    url: https://github.com/kuleshov-group/discrete-diffusion-guidance
+- authors: J. J. Garau-Luis*, P. Bordes*, L. Gonzalez*, M. Roller, <strong>B.P. de Almeida</strong>, L. Hexemer, C. Blum, S. Laurent, J. Grzegorzewski, M. Lang, T. Pierrot§, G. Richard§
+  title: Multi-modal Transfer Learning between Biological Foundation Models
+  journal: NeurIPS
+  year: 2024
+  url: https://proceedings.neurips.cc/paper_files/paper/2024/hash/8f6b3692297e49e5d5c91ba00281379c-Abstract-Conference.html
+  preprint: https://arxiv.org/abs/2406.14150
+  links:
+  - text: MODEL
+    url: https://huggingface.co/isoformer-anonymous/Isoformer
 - authors: S. Boshar, E. Trop, <strong>B.P. de Almeida</strong>, L. Copoiu, T. Pierrot
   title: Are genomic language models all you need? Exploring genomic language models on protein downstream tasks
   journal: Bioinformatics
@@ -151,11 +173,16 @@ others:
     url: https://huggingface.co/datasets/InstaDeepAI/true-cds-protein-tasks
 - authors: H. Dalla-Torre, L. Gonzalez, J. Mendoza-Revilla, N.L. Carranza, A.H. Grzywaczewski, F. Oteri, C. Dallago, E. Trop, <strong>B.P. de Almeida</strong>, H. Sirelkhatim, G. Richard, M. Skwark, K. Beguir, M. Lopez, T. Pierrot
   title: 'The Nucleotide Transformer: Building and Evaluating Robust Foundation Models for Human Genomics'
-  journal: Nat Methods
+  journal: Nature Methods
   year: 2024
   url: https://www.biorxiv.org/content/10.1101/2023.01.11.523679v3
   additional_text: Two example notebooks showing how to finetune any of the models <a href="https://github.com/huggingface/notebooks/blob/main/examples/nucleotide_transformer_dna_sequence_modelling.ipynb" class="link">with regular finetuning</a> and <a href="https://github.com/huggingface/notebooks/blob/main/examples/nucleotide_transformer_dna_sequence_modelling_with_peft.ipynb" class="link">with LoRA</a> on any of the Nucleotide Transformer tasks are also available in HuggingFace example notebooks.
   preprint: https://www.biorxiv.org/content/10.1101/2023.01.11.523679v3
+  press:
+  - text: Research Briefing
+    url: https://www.nature.com/articles/s41592-024-02524-y
+  - text: Blog post
+    url: https://instadeep.com/2024/12/decoding-our-genome-with-nucleotide-transformers/
   links:
   - text: CODE
     url: https://github.com/instadeepai/nucleotide-transformer
@@ -167,7 +194,7 @@ others:
     url: https://huggingface.co/datasets/InstaDeepAI/nucleotide_transformer_downstream_tasks_revised
 - authors: J. Mendoza-Revilla, E. Trop, L. Gonzalez, M. Roller, H. Dalla-Torre, <strong>B.P. de Almeida</strong>, G. Richard, J. Caton, N.L. Carranza, M. Skwark, A. Laterre, K. Beguir, T. Pierrot, M. Lopez
   title: A Foundational Large Language Model for Edible Plant Genomes
-  journal: Commun Biol
+  journal: Communications Biology
   year: 2024
   url: https://www.nature.com/articles/s42003-024-06465-2
   preprint: https://www.biorxiv.org/content/10.1101/2023.10.24.563624v1
@@ -180,10 +207,28 @@ others:
     url: https://huggingface.co/datasets/InstaDeepAI/plant-multi-species-genomes
   - text: BENCHMARK
     url: https://huggingface.co/datasets/InstaDeepAI/plant-genomic-benchmark
+- authors: V. Loubiere, <strong>B.P. de Almeida</strong>, M. Pagani, A. Stark
+  title: Developmental and housekeeping transcriptional programs display distinct modes of enhancer-enhancer cooperativity in <em>Drosophila</em>
+  journal: Nature Communications
+  year: 2024
+  url: https://www.nature.com/articles/s41467-024-52921-2
+  preprint: https://www.biorxiv.org/content/10.1101/2023.10.10.561770v1
+  links:
+  - text: CODE
+    url: https://github.com/vloubiere/git_peSTARRSeq
+- authors: J.M. Xavier, R. Magno, R. Russell, <strong>B.P. de Almeida</strong>, A. Jacinta-Fernandes, A. Besouro-Duarte, M. Dunning, S. Samarajiwa, M. O'Reilly, A.M. Maia, C.L. Rocha, N. Rosli, B.A.J. Ponder, A.T. Maia
+  title: Identification of candidate causal variants and target genes at 41 breast cancer risk loci through differential allelic expression analysis
+  journal: Scientific Reports
+  year: 2024
+  url: https://www.nature.com/articles/s41598-024-72163-y
+  preprint: https://www.medrxiv.org/content/10.1101/2022.03.08.22271889v1
+  links:
+  - text: CODE
+    url: https://github.com/maialab/DaeBreastMicroarrays
 - authors: L. Klaus, <strong>B.P. de Almeida</strong>, A. Vlasova, F. Nemčko, A. Schleiffer, K. Bergauer, L. Hofbauer, M. Rath, A. Stark
   title: Identification and characterization of repressive domains in <em>Drosophila</em> transcription factors
   journal: The EMBO Journal
-  year: 2022
+  year: 2023
   url: https://www.embopress.org/doi/full/10.15252/embj.2022112100
   preprint: https://www.biorxiv.org/content/10.1101/2022.08.26.505062v1
 - authors: L. Correia, J.M. Xavier, R. Magno, <strong>B.P. de Almeida</strong>, F. Esteves, I. Duarte, M. Eldridge, C. Sun, A. Bosma, L. Mittempergher, A. Marreiros, R. Bernards, C. Caldas, S.-F. Chin§ and A.-T. Maia§
@@ -194,7 +239,7 @@ others:
   preprint: https://www.biorxiv.org/content/10.1101/2021.03.05.434137v2
 - authors: J. Conde*, R.A. Pumroy*, C. Baker*, T. Rodrigues*, A. Guerreiro, B.B. Sousa, M.C. Marques, <strong>B.P. de Almeida</strong>, S. Lee, E.P. Leites, D. Picard, A. Samanta, S.H. Vaz, F. Sieglitz, M. Langini, M. Remke, R. Roque, T. Weiss, M. Weller, Y. Liu, S. Han, F. Corzana, V.A. Morais, C.C. Faria, T. Carvalho, P. Filippakopoulos, B. Snijder, N.L. Barbosa-Morais, V.Y. Moiseenkova-Bell§, and G.J.L. Bernardes§
   title: Allosteric Antagonist Modulation of TRPV2 by Piperlongumine Impairs Glioblastoma Progression
-  journal: ACS Cent. Sci.
+  journal: ACS Central Science
   year: 2021
   url: https://pubs.acs.org/doi/10.1021/acscentsci.1c00070
   images:
@@ -226,22 +271,47 @@ others:
   journal: Nature Communications
   year: 2018
   url: https://www.nature.com/articles/s41467-018-03641-x
+
 workshop_papers:
-- authors: E. Trop, C.-H. Kao, M. Polen, Y. Schiff, <strong>B.P. de Almeida</strong>, A. Gokaslan, T. Pierrot, V. Kuleshov
-  title: 'Advancing DNA language models: The genomics long-range benchmark'
-  journal: AAAI, LLMs4Bio Workshop
+- authors: <strong>B.P. de Almeida</strong>, T. Pierrot
+  title: Large Language Models for Genomics
+  journal: AAAI 2024 Workshop on Large Language Models for Science (LLMs4Science)
   year: 2024
-  url: https://github.com/LLMs4Science-Community/LLMs4Science-Community.github.io/blob/main/papers/LLMs4Bio24_paper_12.pdf
+  url: https://llms4science-community.github.io/aaai2024/papers/LLMs4Bio24_paper_11.pdf
+- authors: E. Trop*, C.-H. Kao*, M. Polen*, Y. Schiff*, <strong>B.P. de Almeida</strong>, A. Gokaslan, T. Pierrot, V. Kuleshov
+  title: 'Advancing DNA Language Models: The Genomics Long-Range Benchmark'
+  journal: MLGenX ICLR Workshop
+  year: 2024
+  url: https://openreview.net/pdf?id=M3VlreGcC1
+  links:
+  - text: DATA
+    url: https://huggingface.co/datasets/InstaDeepAI/genomics-long-range-benchmark
 - authors: S. Boshar, E. Trop, <strong>B.P. de Almeida</strong>, T. Pierrot
   title: Exploring Genomic Language Models on Protein Downstream Tasks
-  journal: AAAI, LLMs4Bio Workshop
+  journal: AAAI 2024 Workshop on Large Language Models for Science (LLMs4Science)
   year: 2024
   url: https://github.com/LLMs4Science-Community/LLMs4Science-Community.github.io/blob/main/papers/LLMs4Bio24_paper_14.pdf
+
+patents:
+- inventors: T. Pierrot, <strong>B.P. de Almeida</strong>, G. Richard, H. Dalla-Torre, A. Laterre, K. Beguir, L. Hexemer, S. Laurent, M. Lang, P. Pandey, U. Şahin
+  title: Systems and methods for machine learning-based genome annotation
+  office: US
+  application_number: 19075335
+  year: 2025
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=pt-PT&user=Tm0lHHsAAAAJ&sortby=pubdate&citation_for_view=Tm0lHHsAAAAJ:dhFuZR0502QC
+- inventors: T. Pierrot, <strong>B.P. de Almeida</strong>, G. Richard, H. Dalla-Torre, A. Laterre, K. Beguir, L. Hexemer, S. Laurent, M. Lang, P. Pandey, U. Şahin
+  title: Systems and methods for multimodal conversational agents for biological sequence analysis
+  office: US
+  application_number: 19075312
+  year: 2025
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=pt-PT&user=Tm0lHHsAAAAJ&sortby=pubdate&citation_for_view=Tm0lHHsAAAAJ:9ZlFYXVOiuMC
+
 phd_thesis:
 - authors: <strong>B.P. de Almeida</strong>
   title: Decoding the cis-regulatory information of enhancer sequences
   year: 2023
   url: /assets/others/Bernardo_Almeida_PhDthesis.pdf
+
 softwares:
 - authors: <strong>B.P. de Almeida</strong>*, N. Saraiva-Agostinho*, N.L. Barbosa-Morais
   title: 'cTRAP: Identification of candidate causal perturbations from differential gene expression data'

@@ -1,11 +1,64 @@
-<div class="topnav">
-    <a>Bernardo P. de Almeida</a>
-    <div class="topnav-right">
-        <a href="/">Home</a>
-        <a href="/about/">About me</a>
-        <a href="/publications/">Publications</a>
-        <a href="/code/">Code</a>
-        <a href="/tutorials/">Tutorials</a>
-        <a href="/BernardoAlmeida_CV.pdf">CV</a>
-    </div>
-</div>
+<nav class="navigation" role="navigation" aria-label="Main navigation">
+	<div class="nav-container">
+		<a href="/" class="nav-brand">Bernardo P. de Almeida</a>
+		
+		<button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		
+		<ul class="nav-menu" id="nav-menu" aria-expanded="false">
+			<li><a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a></li>
+			<li><a href="/about/" class="nav-link {% if page.url == '/about/' %}active{% endif %}">About me</a></li>
+			<li><a href="/publications/" class="nav-link {% if page.url == '/publications/' %}active{% endif %}">Publications</a></li>
+			<li><a href="/code/" class="nav-link {% if page.url == '/code/' %}active{% endif %}">Code</a></li>
+			<li><a href="/tutorials/" class="nav-link {% if page.url == '/tutorials/' %}active{% endif %}">Tutorials</a></li>
+		</ul>
+	</div>
+</nav>
+
+<script>
+	// Mobile menu toggle
+	document.addEventListener('DOMContentLoaded', function() {
+		const toggle = document.querySelector('.nav-toggle');
+		const menu = document.querySelector('.nav-menu');
+		
+		if (toggle && menu) {
+			toggle.addEventListener('click', function() {
+				const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+				toggle.setAttribute('aria-expanded', !isExpanded);
+				menu.setAttribute('aria-expanded', !isExpanded);
+			});
+			
+			// Close menu when clicking outside
+			document.addEventListener('click', function(event) {
+				if (!toggle.contains(event.target) && !menu.contains(event.target)) {
+					toggle.setAttribute('aria-expanded', 'false');
+					menu.setAttribute('aria-expanded', 'false');
+				}
+			});
+			
+			// Close menu on Escape key
+			document.addEventListener('keydown', function(event) {
+				if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+					toggle.setAttribute('aria-expanded', 'false');
+					menu.setAttribute('aria-expanded', 'false');
+					toggle.focus();
+				}
+			});
+		}
+		
+		// Sticky navigation scroll effect
+		const navigation = document.querySelector('.navigation');
+		if (navigation) {
+			window.addEventListener('scroll', function() {
+				if (window.scrollY > 10) {
+					navigation.classList.add('scrolled');
+				} else {
+					navigation.classList.remove('scrolled');
+				}
+			});
+		}
+	});
+</script>

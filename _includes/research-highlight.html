@@ -1,38 +1,55 @@
-{% if include.highlight.image %}
-<div class="images" style="margin-bottom:0;margin-top:{% if forloop.first %}20px{% else %}40px{% endif %};">
-  <img class="zoom" height="100" src="{{ include.highlight.image }}">
-</div>
-{% endif %}
-
-{% if include.highlight.images %}
-<div class="images" style="margin-bottom:0;margin-top:{% if forloop.first %}20px{% else %}40px{% endif %};">
-  {% for img in include.highlight.images %}
-  <img class="zoom" height="100" src="{{ img }}">
-  {% endfor %}
-</div>
-{% endif %}
-
-<p style="margin-bottom:0;margin:0; padding-top:0;"><a href="{{ include.highlight.url }}" class="paper">{{ include.highlight.title }}</a> {{ include.highlight.journal }} {{ include.highlight.year }}</p>
-
-{% if include.highlight.description %}
-<p style="margin:0; padding-top:0;">{{ include.highlight.description }}</p>
-{% endif %}
-
-{% if include.highlight.featured_commentary %}
-  {% for commentary in include.highlight.featured_commentary %}
-  <p2 style="margin:0; padding-top:0;; margin-bottom:05px">. Featured commentary: {{ commentary.author }}. "<a href="{{ commentary.url }}" class="link">{{ commentary.text }}</a>". {{ commentary.journal }}</p2>
-  <br/>
-  {% endfor %}
-{% endif %}
-
-{% if include.highlight.press %}
-  {% for press in include.highlight.press %}
-  <p2 style="margin:0; padding-top:0;; margin-bottom:05px">. <a href="{{ press.url }}" class="link">{{ press.text }}</a></p2>
-  <br/>
-  {% endfor %}
-{% endif %}
-
-{% if include.highlight.video %}
-<iframe width="360" height="180" src="{{ include.highlight.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br/>
-{% endif %}
+<article class="research-highlight">
+	<span class="research-highlight__badge">Featured Research</span>
+	
+	{% if include.highlight.image or include.highlight.images or include.highlight.video %}
+	<div class="research-highlight__media">
+		{% if include.highlight.image %}
+		<div class="research-highlight__image-container">
+			<img class="research-highlight__image" src="{{ include.highlight.image }}" alt="{{ include.highlight.title }}" loading="lazy">
+		</div>
+		{% endif %}
+		
+		{% if include.highlight.images %}
+		<div class="research-highlight__images">
+			{% for img in include.highlight.images %}
+			<img src="{{ img }}" alt="Research highlight image {{ forloop.index }}" loading="lazy">
+			{% endfor %}
+		</div>
+		{% endif %}
+		
+		{% if include.highlight.video %}
+		<div class="research-highlight__video">
+			<iframe src="{{ include.highlight.video }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		{% endif %}
+	</div>
+	{% endif %}
+	
+	<h2 class="research-highlight__title">
+		<a href="{{ include.highlight.url }}">{{ include.highlight.title }}</a>
+	</h2>
+	
+	<p class="research-highlight__meta">
+		{{ include.highlight.journal }} {{ include.highlight.year }}
+	</p>
+	
+	{% if include.highlight.description %}
+	<p class="research-highlight__description">{{ include.highlight.description }}</p>
+	{% endif %}
+	
+	{% if include.highlight.featured_commentary %}
+		{% for commentary in include.highlight.featured_commentary %}
+		<p class="research-highlight__commentary">
+			Featured commentary: {{ commentary.author }}. "<a href="{{ commentary.url }}">{{ commentary.text }}</a>". {{ commentary.journal }}
+		</p>
+		{% endfor %}
+	{% endif %}
+	
+	{% if include.highlight.press %}
+		{% for press in include.highlight.press %}
+		<p class="research-highlight__press">
+			<a href="{{ press.url }}">{{ press.text }}</a>
+		</p>
+		{% endfor %}
+	{% endif %}
+</article>
